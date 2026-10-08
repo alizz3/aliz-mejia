@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aliz-mejia.vercel.app/sitemap.xml
