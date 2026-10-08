@@ -1,0 +1,26 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 120' role='img' aria-label='MuMu'><defs><linearGradient id='g' x1='0' x2='1'><stop offset='0' stop-color='#D66F95'/><stop offset='1' stop-color='#8E78B4'/></linearGradient></defs><g transform='translate(0 0) scale(.6)'>
+  <ellipse cx="100" cy="190" rx="50" ry="6" fill="#000" opacity=".06"/>
+  <path d="M140 162 q22 -2 22 -24" fill="none" stroke="#5B4A5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M158 134 q8 -4 8 6 q-6 4 -8 -6z" fill="#F7B6C2" stroke="#5B4A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58 152 Q56 112 100 112 Q144 112 142 152 Q142 186 100 186 Q58 186 58 152Z" fill="#fff" stroke="#5B4A5E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M116 138 q16 -6 20 9 q1 14 -13 13 q-12 -3 -7 -22z" fill="#F7B6C2"/>
+  <ellipse cx="96" cy="162" rx="21" ry="15" fill="#FFF3E3"/>
+  <ellipse cx="80" cy="183" rx="14" ry="8" fill="#fff" stroke="#5B4A5E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="80" cy="186" rx="9" ry="3.6" fill="#F7B6C2"/>
+  <ellipse cx="120" cy="183" rx="14" ry="8" fill="#fff" stroke="#5B4A5E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="120" cy="186" rx="9" ry="3.6" fill="#F7B6C2"/>
+  <ellipse cx="62" cy="148" rx="9" ry="14" transform="rotate(18 62 148)" fill="#fff" stroke="#5B4A5E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="138" cy="148" rx="9" ry="14" transform="rotate(-18 138 148)" fill="#fff" stroke="#5B4A5E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="40" cy="76" rx="21" ry="11" transform="rotate(-25 40 76)" fill="#fff" stroke="#5B4A5E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="42" cy="77" rx="12" ry="5.5" transform="rotate(-25 42 77)" fill="#F7B6C2"/>
+  <ellipse cx="160" cy="76" rx="21" ry="11" transform="rotate(25 160 76)" fill="#fff" stroke="#5B4A5E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="158" cy="77" rx="12" ry="5.5" transform="rotate(25 158 77)" fill="#F7B6C2"/>
+  <path d="M74 48 q-6 -16 6 -20 q5 9 2 20z" fill="#FFF3E3" stroke="#5B4A5E" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M126 48 q6 -16 -6 -20 q-5 9 -2 20z" fill="#FFF3E3" stroke="#5B4A5E" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="100" cy="88" rx="60" ry="50" fill="#fff" stroke="#5B4A5E" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M126 45 q24 -2 29 24 q-12 9 -23 0 q-9 -9 -6 -24z" fill="#F7B6C2"/>
+  <path d="M55 74 q3 -14 17 -10 q7 9 -1 16 q-11 5 -16 -6z" fill="#F7B6C2"/>
+  <path d="M90 42 q2 -12 10 -6 q6 -9 12 1 q-4 6 -11 4 q-6 4 -11 1z" fill="#F7B6C2" stroke="#5B4A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="78" cy="88" rx="6.5" ry="8" fill="#5B4A5E"/><circle cx="80.5" cy="85" r="2.6" fill="#fff"/><circle cx="76" cy="91" r="1.1" fill="#fff" opacity=".8"/><ellipse cx="122" cy="88" rx="6.5" ry="8" fill="#5B4A5E"/><circle cx="124.5" cy="85" r="2.6" fill="#fff"/><circle cx="120" cy="91" r="1.1" fill="#fff" opacity=".8"/>
+  <ellipse cx="59" cy="104" rx="9" ry="5.5" fill="#F4A3B5" opacity=".55"/>
+  <ellipse cx="141" cy="104" rx="9" ry="5.5" fill="#F4A3B5" opacity=".55"/>
+  <ellipse cx="100" cy="114" rx="29" ry="17" fill="#F9D0DA" stroke="#5B4A5E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <ellipse cx="90" cy="111" rx="3" ry="4" fill="#5B4A5E" opacity=".7"/>
+  <ellipse cx="110" cy="111" rx="3" ry="4" fill="#5B4A5E" opacity=".7"/>
+  <path d="M93 123 q7 6 14 0" fill="none" stroke="#5B4A5E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(138 44) rotate(18)"><path d="M0 0 q-17 -13 -17 2 q0 13 17 -2z" fill="#EE8FAE" stroke="#5B4A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M0 0 q17 -13 17 2 q0 13 -17 -2z" fill="#EE8FAE" stroke="#5B4A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle r="4.5" fill="#EE8FAE" stroke="#5B4A5E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></g><path transform="translate(170 60) scale(0.9)" d="M0 4 C-2 -2 -10 -2 -10 4 C-10 9 -4 12 0 16 C4 12 10 9 10 4 C10 -2 2 -2 0 4Z" fill="#F7B6C2"/><path transform="translate(28 50) scale(0.6)" d="M0 4 C-2 -2 -10 -2 -10 4 C-10 9 -4 12 0 16 C4 12 10 9 10 4 C10 -2 2 -2 0 4Z" fill="#C3B3D4"/></g><text x='128' y='86' font-family='Poppins, Arial, sans-serif' font-weight='700' font-size='76' letter-spacing='-3' fill='url(#g)'>MuMu</text></svg>

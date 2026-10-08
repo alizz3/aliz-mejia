@@ -376,6 +376,75 @@ const pizzaFlavorOut = name =>
     codigo: null,
   },
 
+  {
+    slug: "mumu",
+    nombre: "MuMu",
+    logo: { claro: "assets/logos/mumu.svg", oscuro: "assets/logos/mumu.svg" },
+    destacado: true,
+    estado: "vivo",
+    anio: "2026",
+    categorias: ["web", "dashboard", "backend"],
+    stack: ["Vue 3", "Vite", "Firebase Auth", "Firestore", "Vercel Functions", "Google OAuth", "Gmail API", "Calendar API", "Classroom API", "Moodle Web Services", "PWA"],
+    vivo: "https://mu-mu-blond.vercel.app/",
+    repo: { url: "https://github.com/alizz3/MuMu", publico: true },
+    lab: null,
+    composicion: "mixta",
+    imagenes: [
+      { src: "assets/proyectos/mumu-1.webp", tipo: "desk", alt: { es: "Inicio de MuMu con la recomendación de qué hacer ahora y la vaquita", en: "MuMu home with the what-to-do-now suggestion and the cow mascot", pt: "Início do MuMu com a sugestão do que fazer agora e a vaquinha" } },
+      { src: "assets/proyectos/mumu-2.webp", tipo: "mob", alt: { es: "MuMu en celular", en: "MuMu on a phone", pt: "MuMu no celular" } },
+      { src: "assets/proyectos/mumu-3.webp", tipo: "mob", alt: { es: "La casita de la vaquita con Leo y Negra", en: "The cow's little house with Leo and Negra", pt: "A casinha da vaquinha com Leo e Negra" } },
+    ],
+    t: {
+      es: {
+        tipo: "Sistema operativo personal",
+        resumen: "Agenda, hábitos, universidad y segundo cerebro en una sola app, con una vaquita que recomienda qué hacer ahora.",
+        rol: "Proyecto propio: producto, diseño, ilustraciones, frontend, backend e integraciones.",
+        contexto: "Tenía mis pendientes repartidos entre Tu Aula, Classroom, Gmail, el calendario y notas sueltas, y mucho de lo que aprendía en libros y podcasts se quedaba en la teoría.",
+        problema: "Las apps de tareas solo muestran listas: no saben cuánto tiempo libre tengo, qué vence primero ni qué me ha funcionado antes. Y casi todas castigan cuando pierdes una racha.",
+        objetivo: "Una app que una todas mis fuentes, me diga qué hacer en el tiempo libre que tengo y aprenda de mis propios datos, sin generar culpa.",
+        solucion: "Una app en Vue 3 con un motor propio que cruza agenda, fechas límite, prioridad, energía y tiempo libre para recomendar una sola acción. Se conecta con Gmail, Google Calendar y Classroom por OAuth (varias cuentas, permisos mínimos y sumables) y con Tu Aula vía Moodle. Incluye modo enfoque de 5 minutos, rachas flexibles, experimentos personales que construyen “mi propio método”, analítica sobre mis datos y una casita que se decora con el progreso real.",
+        funciones: ["“¿Qué hago ahora?”: recomendación según tiempo libre, fechas y energía", "Agenda que detecta huecos libres y agenda bloques para cada tarea", "Gmail, Calendar y Classroom con varias cuentas de Google", "Tu Aula (Moodle) con detección de tareas nuevas y cambios de fecha", "Modo “No quiero hacer esto 😭”: empezar con 5 minutos", "Hábitos con rachas flexibles (“18 de 24 días”)", "Mi cerebro: libros y podcasts → principios → experimentos", "Gamificación con la vaquita, Leo y Negra (ilustraciones SVG propias)", "Instalable como app (PWA) y modo claro/oscuro"],
+        decisiones: ["Tokens de Google y de Moodle cifrados con AES-256-GCM en una zona de Firestore que el navegador no puede leer; la contraseña de Tu Aula se usa una vez y se descarta.", "Toda la API vive en una sola función serverless con un enrutador propio, para caber en el plan gratuito de Vercel.", "Permisos de Google incrementales: se suman sin perder los anteriores, y la app muestra lo que Google realmente entregó.", "Sin integraciones inventadas: lo que una web no puede hacer (leer el tiempo de pantalla, aparecer sobre otras apps) se registra a mano y queda listo para una futura app nativa."],
+        aprendizajes: "Integrar APIs reales (OAuth, Moodle) enseña más sobre errores y permisos que cualquier tutorial. Próximo: conectar MuMu Finanzas y notificaciones push.",
+      },
+      en: {
+        tipo: "Personal operating system",
+        resumen: "Planner, habits, university and second brain in one app, with a cow mascot that tells you what to do next.",
+        rol: "My own project: product, design, illustrations, frontend, backend and integrations.",
+        contexto: "My to-dos were scattered across Tu Aula, Classroom, Gmail, my calendar and loose notes, and much of what I learned from books and podcasts stayed in theory.",
+        problema: "To-do apps only show lists: they don't know how much free time I have, what's due first or what has worked for me before. And most of them punish you for breaking a streak.",
+        objetivo: "One app that joins all my sources, tells me what to do with the free time I actually have and learns from my own data, without guilt.",
+        solucion: "A Vue 3 app with its own engine that combines schedule, deadlines, priority, energy and free time to suggest a single action. It connects to Gmail, Google Calendar and Classroom through OAuth (multiple accounts, minimal and incremental permissions) and to Tu Aula through Moodle. It includes a 5-minute focus mode, flexible streaks, personal experiments that build “my own method”, analytics on my own data and a little house decorated with real progress.",
+        funciones: ["“What should I do now?”: a suggestion based on free time, deadlines and energy", "Planner that finds free blocks and schedules sessions for each task", "Gmail, Calendar and Classroom with multiple Google accounts", "Tu Aula (Moodle) with new-task and due-date-change detection", "“I don't want to do this 😭” mode: start with 5 minutes", "Habits with flexible streaks (“18 of 24 days”)", "Second brain: books and podcasts → principles → experiments", "Gamification with the cow, Leo and Negra (original SVG illustrations)", "Installable (PWA) with light and dark mode"],
+        decisiones: ["Google and Moodle tokens encrypted with AES-256-GCM in a Firestore area the browser can't read; the Tu Aula password is used once and discarded.", "The whole API runs in a single serverless function with a custom router, to fit Vercel's free plan.", "Incremental Google permissions: new ones add up without losing the old ones, and the app shows what Google actually granted.", "No fake integrations: what a website can't do (read screen time, draw over other apps) is logged manually and ready for a future native app."],
+        aprendizajes: "Integrating real APIs (OAuth, Moodle) teaches more about errors and permissions than any tutorial. Next: connect MuMu Finanzas and push notifications.",
+      },
+      pt: {
+        tipo: "Sistema operacional pessoal",
+        resumen: "Agenda, hábitos, faculdade e segundo cérebro num só app, com uma vaquinha que recomenda o que fazer agora.",
+        rol: "Projeto próprio: produto, design, ilustrações, frontend, backend e integrações.",
+        contexto: "Minhas pendências estavam espalhadas entre o Tu Aula, o Classroom, o Gmail, a agenda e notas soltas, e muito do que eu aprendia em livros e podcasts ficava na teoria.",
+        problema: "Os apps de tarefas só mostram listas: não sabem quanto tempo livre eu tenho, o que vence primeiro nem o que já funcionou para mim. E quase todos punem quando você perde uma sequência.",
+        objetivo: "Um app que una todas as minhas fontes, diga o que fazer com o tempo livre que eu tenho e aprenda com os meus próprios dados, sem culpa.",
+        solucion: "Um app em Vue 3 com um motor próprio que cruza agenda, prazos, prioridade, energia e tempo livre para recomendar uma única ação. Conecta-se ao Gmail, Google Agenda e Classroom via OAuth (várias contas, permissões mínimas e incrementais) e ao Tu Aula via Moodle. Inclui modo foco de 5 minutos, sequências flexíveis, experimentos pessoais que constroem “meu próprio método”, análises dos meus dados e uma casinha decorada com o progresso real.",
+        funciones: ["“O que eu faço agora?”: sugestão pelo tempo livre, prazos e energia", "Agenda que encontra horários livres e agenda blocos para cada tarefa", "Gmail, Agenda e Classroom com várias contas Google", "Tu Aula (Moodle) com detecção de tarefas novas e mudanças de prazo", "Modo “Não quero fazer isso 😭”: começar com 5 minutos", "Hábitos com sequências flexíveis (“18 de 24 dias”)", "Segundo cérebro: livros e podcasts → princípios → experimentos", "Gamificação com a vaquinha, Leo e Negra (ilustrações SVG próprias)", "Instalável (PWA) e modo claro/escuro"],
+        decisiones: ["Tokens do Google e do Moodle criptografados com AES-256-GCM numa área do Firestore que o navegador não lê; a senha do Tu Aula é usada uma vez e descartada.", "Toda a API roda numa única função serverless com roteador próprio, para caber no plano gratuito da Vercel.", "Permissões do Google incrementais: as novas se somam sem perder as anteriores, e o app mostra o que o Google realmente concedeu.", "Sem integrações inventadas: o que um site não pode fazer (ler o tempo de tela, aparecer sobre outros apps) é registrado manualmente e fica pronto para um futuro app nativo."],
+        aprendizajes: "Integrar APIs reais (OAuth, Moodle) ensina mais sobre erros e permissões do que qualquer tutorial. Próximo: conectar o MuMu Finanzas e notificações push.",
+      },
+    },
+    flujo: ["App · Vue 3 + PWA", "Motor · ¿qué hago ahora?", "API · 1 función en Vercel", "Google OAuth · Gmail, Calendar, Classroom", "Moodle · Tu Aula", "Firestore · datos + tokens cifrados"],
+    codigo: {
+      archivo: "api/_lib/crypto.js",
+      lenguaje: "js",
+      texto: `export function encrypt(value) {
+  const iv = crypto.randomBytes(12)
+  const c = crypto.createCipheriv('aes-256-gcm', key(), iv)
+  const data = Buffer.concat([c.update(JSON.stringify(value), 'utf8'), c.final()])
+  return \`v1.\${iv.toString('base64url')}.\${c.getAuthTag().toString('base64url')}.\${data.toString('base64url')}\`
+}`,
+    },
+  },
+
   /* ---------------- Proyectos secundarios ---------------- */
   {
     slug: "odoo-andrec",
@@ -605,7 +674,7 @@ const pizzaFlavorOut = name =>
 /* ---------- Habilidades: solo lo verificado en los repositorios ---------- */
 window.HABILIDADES = [
   { grupo: { es: "Lenguajes", en: "Languages", pt: "Linguagens" }, items: [
-    { n: "JavaScript", p: ["el-taller-de-vane", "exe-presentaciones", "emily-pizza", "cuidapp", "maletica"] },
+    { n: "JavaScript", p: ["el-taller-de-vane", "exe-presentaciones", "emily-pizza", "cuidapp", "maletica", "mumu"] },
     { n: "Python", p: ["odoo-andrec"] },
     { n: "PHP", p: ["tearspa", "lasercenter"] },
     { n: "SQL · MySQL", p: ["tearspa", "lasercenter"] },
@@ -614,14 +683,17 @@ window.HABILIDADES = [
   ]},
   { grupo: { es: "Frontend", en: "Frontend", pt: "Frontend" }, items: [
     { n: "React", p: ["el-taller-de-vane", "cuidapp", "motocoach", "cipa-exe-web"] },
-    { n: "Vue 3", p: ["maletica"] },
-    { n: "Vite", p: ["el-taller-de-vane", "cuidapp", "maletica", "motocoach"] },
+    { n: "Vue 3", p: ["maletica", "mumu"] },
+    { n: "Vite", p: ["el-taller-de-vane", "cuidapp", "maletica", "motocoach", "mumu"] },
     { n: "Tailwind CSS", p: ["cuidapp"] },
-    { n: "PWA · Service Worker", p: ["emily-pizza", "exe-presentaciones"] },
+    { n: "PWA · Service Worker", p: ["emily-pizza", "exe-presentaciones", "mumu"] },
   ]},
   { grupo: { es: "Backend y datos", en: "Backend and data", pt: "Backend e dados" }, items: [
-    { n: "Firebase Auth", p: ["el-taller-de-vane", "cuidapp", "maletica", "emily-pizza", "exe-presentaciones"] },
-    { n: "Firestore + reglas", p: ["el-taller-de-vane", "emily-pizza", "cuidapp", "maletica"] },
+    { n: "Firebase Auth", p: ["el-taller-de-vane", "cuidapp", "maletica", "emily-pizza", "exe-presentaciones", "mumu"] },
+    { n: "Firestore + reglas", p: ["el-taller-de-vane", "emily-pizza", "cuidapp", "maletica", "mumu"] },
+    { n: "Google OAuth · Gmail, Calendar, Classroom", p: ["mumu"] },
+    { n: "Funciones serverless (Vercel)", p: ["mumu"] },
+    { n: "Moodle Web Services", p: ["mumu"] },
     { n: "Realtime Database", p: ["exe-presentaciones"] },
     { n: "Firebase Storage", p: ["el-taller-de-vane", "cuidapp"] },
     { n: "Odoo 16 · ORM", p: ["odoo-andrec"] },
@@ -629,15 +701,16 @@ window.HABILIDADES = [
   ]},
   { grupo: { es: "Herramientas", en: "Tools", pt: "Ferramentas" }, items: [
     { n: "Git y GitHub", p: [] },
-    { n: "Vercel", p: ["emily-pizza", "maletica", "cuidapp", "exe-presentaciones"] },
+    { n: "Vercel", p: ["emily-pizza", "maletica", "cuidapp", "exe-presentaciones", "mumu"] },
     { n: "Firebase Hosting", p: ["el-taller-de-vane"] },
     { n: "VS Code", p: [] },
   ]},
   { grupo: { es: "Diseño y producto", en: "Design and product", pt: "Design e produto" }, items: [
     { n: { es: "Identidad de marca", en: "Brand identity", pt: "Identidade visual" }, p: ["el-taller-de-vane", "exe-presentaciones"] },
-    { n: { es: "Diseño de interfaces", en: "UI design", pt: "Design de interfaces" }, p: ["el-taller-de-vane", "emily-pizza", "maletica"] },
-    { n: { es: "Modo claro y oscuro", en: "Light and dark mode", pt: "Modo claro e escuro" }, p: ["maletica", "emily-pizza", "exe-presentaciones"] },
-    { n: { es: "SEO y accesibilidad", en: "SEO and accessibility", pt: "SEO e acessibilidade" }, p: ["emily-pizza"] },
+    { n: { es: "Diseño de interfaces", en: "UI design", pt: "Design de interfaces" }, p: ["el-taller-de-vane", "emily-pizza", "maletica", "mumu"] },
+    { n: { es: "Modo claro y oscuro", en: "Light and dark mode", pt: "Modo claro e escuro" }, p: ["maletica", "emily-pizza", "exe-presentaciones", "mumu"] },
+    { n: { es: "SEO y accesibilidad", en: "SEO and accessibility", pt: "SEO e acessibilidade" }, p: ["emily-pizza", "mumu"] },
+    { n: { es: "Ilustración SVG", en: "SVG illustration", pt: "Ilustração SVG" }, p: ["mumu"] },
   ]},
 ];
 
