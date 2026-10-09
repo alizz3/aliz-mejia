@@ -9,7 +9,7 @@
 window.PERFIL = {
   nombre: "Aliz Mejía",
   corto: "Aliz",
-  ciudad: "Bogotá, Colombia",
+  ciudad: "Villavicencio, Colombia",
   email: "dev.doblezz@gmail.com",
   whatsapp: "573113071168",
   whatsappTexto: "+57 311 307 1168",
@@ -727,7 +727,4 @@ window.TRAYECTORIA = [
   { tipo: "estudio", lugar: "Universidad del Tolima · IDEAD", periodo: { es: "En curso", en: "In progress", pt: "Em andamento" },
     cargo: { es: "Ingeniería de Sistemas", en: "Systems Engineering (B.Eng.)", pt: "Engenharia de Sistemas" },
     texto: { es: "Modalidad a distancia.", en: "Distance program.", pt: "Modalidade a distância." } },
-  { tipo: "estudio", lugar: "SENA", periodo: { es: "En curso", en: "In progress", pt: "Em andamento" },
-    cargo: { es: "Tecnología en Análisis y Desarrollo de Software (ADSO)", en: "Software Analysis and Development Technologist (ADSO)", pt: "Tecnólogo em Análise e Desenvolvimento de Software (ADSO)" },
-    texto: { es: "Programa virtual.", en: "Online program.", pt: "Programa virtual." } },
 ];

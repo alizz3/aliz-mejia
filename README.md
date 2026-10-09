@@ -4,9 +4,9 @@ Sitio estático (HTML, CSS y JavaScript, sin build) en español, inglés y portu
 
 ## Qué tiene
 
-- **Hero** con tu logo, foto (cuando la agregues) y los sitios que están en línea.
-- **Proyectos destacados**: El Taller de Vane, .EXE, Emily Pizza, Cuidapp y Maletica, con capturas reales.
-- **Explorador** con filtros por categoría y buscador por nombre o tecnología (14 proyectos).
+- **Inicio compacto** (pensado para poco scroll): hero, proyectos destacados en tarjetas (carrusel en celular), tecnologías, Lab, sobre mí, experiencia en línea horizontal y contacto.
+- **Proyectos destacados**: los que tengan `destacado: true` en `js/datos.js`, con capturas reales.
+- **Todos los proyectos** en `#/proyectos`, con filtros por categoría y buscador. **Tecnologías** completas en `#/habilidades`.
 - **Casos de estudio** en `#/proyecto/<slug>`: contexto, problema, solución, arquitectura, decisiones, código y aprendizajes.
 - **Interactive Lab** con tres demos de nivel 2 (frontend con datos ficticios):
   - Dashboard de El Taller de Vane: login simulado, resumen con gráfica, pedidos con búsqueda, filtros, orden y edición, productos con alta y visibilidad.
@@ -37,6 +37,7 @@ npx serve .
 | Proyectos, habilidades y trayectoria | `js/datos.js` |
 | Textos de la interfaz (es, en, pt) | `js/i18n.js` |
 | Demos del Lab | `js/lab.js` y `css/lab.css` |
+| Íconos de tecnologías (Simple Icons) | `js/iconos.js` |
 | Diseño general | `css/estilos.css` |
 | Tu marca (logos sin fondo) | `assets/marca/` |
 | Capturas de proyectos | `assets/proyectos/` |
@@ -51,10 +52,9 @@ npx serve .
 
 | Foto | Archivo | Tamaño |
 |---|---|---|
-| Hero | `assets/foto/aliz.webp` | vertical 4:5, mínimo 1600 × 2000 px |
-| Sobre mí | `assets/foto/aliz-sobre-mi.webp` | cuadrada, mínimo 1200 × 1200 px |
+| Sobre mí | `assets/foto/aliz-sobre-mi.webp` | cuadrada, mínimo 1200 × 1200 px (se muestra en círculo) |
 
-Después pon `foto: true` y `fotoSobreMi: true` en `PERFIL` (inicio de `js/datos.js`). Mientras tanto se muestran tu monograma y tu sello.
+Después pon `fotoSobreMi: true` en `PERFIL` (inicio de `js/datos.js`). Mientras tanto se muestra tu sello.
 
 ## Por completar
 
@@ -62,7 +62,7 @@ Después pon `foto: true` y `fotoSobreMi: true` en `PERFIL` (inicio de `js/datos
 - [ ] Fechas en Andrec Corporation (`periodo` en `TRAYECTORIA`).
 - [ ] Decidir qué repositorios hacer públicos. Los privados se muestran como "Código privado" y no enlazan.
 - [ ] Confirmar para quién fueron TearSpa y Laser Center (2023).
-- [ ] Tus dos fotos.
+- [ ] Tu foto para Sobre mí.
 
 ## Checklist de lanzamiento
 
