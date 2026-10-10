@@ -704,6 +704,7 @@ window.HABILIDADES = [
     { n: "Vercel", p: ["emily-pizza", "maletica", "cuidapp", "exe-presentaciones", "mumu"] },
     { n: "Firebase Hosting", p: ["el-taller-de-vane"] },
     { n: "VS Code", p: [] },
+    { n: "Figma", p: [] },
   ]},
   { grupo: { es: "Diseño y producto", en: "Design and product", pt: "Design e produto" }, items: [
     { n: { es: "Identidad de marca", en: "Brand identity", pt: "Identidade visual" }, p: ["el-taller-de-vane", "exe-presentaciones"] },

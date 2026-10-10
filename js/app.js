@@ -123,7 +123,7 @@
   }
 
   /* ---------------- inicio ---------------- */
-  const TECS = ["react", "vuedotjs", "javascript", "firebase", "vite", "tailwindcss", "python", "odoo", "php", "mysql", "git", "vercel"];
+  const TECS = ["react", "vuedotjs", "javascript", "firebase", "vite", "tailwindcss", "python", "odoo", "php", "mysql", "git", "vercel", "figma"];
 
   function renderInicio() {
     const t = T(); const P = PERFIL;

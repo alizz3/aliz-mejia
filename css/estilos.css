@@ -241,7 +241,7 @@ a.link-arrow:hover svg { transform: translateX(3px); }
 .tec-band { margin-top: 26px; display: grid; gap: 14px; padding: 18px 22px; border-radius: var(--r); background: var(--bg-2); border: 1px solid var(--line); }
 .tec-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
 .tec-band h3 { font-family: var(--display); font-weight: 600; font-size: 19px; }
-.tec-list { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 10px 8px; }
+.tec-list { display: grid; grid-template-columns: repeat(13, minmax(0, 1fr)); gap: 10px 8px; }
 .tec-list li { display: flex; flex-direction: column; align-items: center; gap: 4px; font-size: 11px; color: var(--muted); text-align: center; }
 .tec-ico { width: 42px; height: 42px; border-radius: 12px; background: #FFFFFF; border: 1px solid rgba(46, 36, 54, .08); display: grid; place-items: center; box-shadow: 0 4px 12px -6px rgba(76, 52, 110, .25); }
 @media (max-width: 900px) { .tec-list { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
