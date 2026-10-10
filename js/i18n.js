@@ -1,6 +1,7 @@
 /* Textos de la interfaz en español, inglés y portugués. */
 window.I18N = {
   es: {
+    fab: { boton: "Contáctame", arriba: "Volver arriba", titulo: "¿Hablamos?", whatsapp: "WhatsApp", whatsappSub: "Respondo más rápido por aquí", correo: "Correo", linkedin: "LinkedIn", linkedinSub: "Mi perfil profesional", copiar: "Copiar", mensaje: "Hola Aliz, vi tu portafolio y quiero hablar contigo sobre " },
     skip: "Saltar al contenido",
     nav: { inicio: "Inicio", proyectos: "Proyectos", lab: "Lab", sobre: "Sobre mí", experiencia: "Experiencia", contacto: "Contacto" },
     hablemos: "Hablemos",
@@ -61,6 +62,7 @@ window.I18N = {
   },
 
   en: {
+    fab: { boton: "Contact me", arriba: "Back to top", titulo: "Let's talk", whatsapp: "WhatsApp", whatsappSub: "Fastest way to reach me", correo: "Email", linkedin: "LinkedIn", linkedinSub: "My professional profile", copiar: "Copy", mensaje: "Hi Aliz, I saw your portfolio and I'd like to talk about " },
     skip: "Skip to content",
     nav: { inicio: "Home", proyectos: "Projects", lab: "Lab", sobre: "About", experiencia: "Experience", contacto: "Contact" },
     hablemos: "Let's talk",
@@ -121,6 +123,7 @@ window.I18N = {
   },
 
   pt: {
+    fab: { boton: "Fale comigo", arriba: "Voltar ao topo", titulo: "Vamos conversar?", whatsapp: "WhatsApp", whatsappSub: "Respondo mais rápido por aqui", correo: "E-mail", linkedin: "LinkedIn", linkedinSub: "Meu perfil profissional", copiar: "Copiar", mensaje: "Oi Aliz, vi seu portfólio e quero falar sobre " },
     skip: "Pular para o conteúdo",
     nav: { inicio: "Início", proyectos: "Projetos", lab: "Lab", sobre: "Sobre mim", experiencia: "Experiência", contacto: "Contato" },
     hablemos: "Vamos conversar",

@@ -438,6 +438,30 @@
     </div>`;
   }
 
+  /* ---------------- botones flotantes ---------------- */
+  const fab = $("#fab"), panel = $("#fab-panel"), arriba = $("#arriba");
+  function renderFlotantes() {
+    const f = T().fab; const P = PERFIL;
+    $("#fab-txt").textContent = f.boton;
+    arriba.setAttribute("aria-label", f.arriba);
+    const wa = `https://wa.me/${P.whatsapp}?text=${encodeURIComponent(f.mensaje)}`;
+    panel.innerHTML = `
+      <p class="fab-tit">${f.titulo}</p>
+      <a role="menuitem" class="fab-op" href="${wa}" target="_blank" rel="noopener"><span class="fab-ico wa">${ico("i-wa")}</span><span><b>${f.whatsapp}</b><small>${f.whatsappSub}</small></span></a>
+      <div class="fab-op"><a role="menuitem" class="fab-op-link" href="mailto:${P.email}"><span class="fab-ico">${ico("i-mail")}</span><span><b>${f.correo}</b><small>${P.email}</small></span></a><button type="button" class="fab-copiar" data-copiar="${P.email}">${f.copiar}</button></div>
+      <a role="menuitem" class="fab-op" href="${P.linkedin}" target="_blank" rel="noopener"><span class="fab-ico">${ico("i-in")}</span><span><b>${f.linkedin}</b><small>${f.linkedinSub}</small></span></a>`;
+  }
+  function abrirPanel(ab) {
+    panel.hidden = !ab; fab.setAttribute("aria-expanded", String(ab)); fab.classList.toggle("abierto", ab);
+    if (ab) panel.querySelector("a")?.focus();
+  }
+  fab.addEventListener("click", () => abrirPanel(panel.hidden));
+  document.addEventListener("click", (e) => { if (!panel.hidden && !e.target.closest(".fab-wrap")) abrirPanel(false); });
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !panel.hidden) { abrirPanel(false); fab.focus(); } });
+  panel.addEventListener("click", (e) => { if (e.target.closest("a")) abrirPanel(false); });
+  arriba.addEventListener("click", () => { scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }); $("#top a.brand")?.focus({ preventScroll: true }); });
+  addEventListener("scroll", () => { arriba.hidden = scrollY < 700; }, { passive: true });
+
   /* ---------------- rutas ---------------- */
   function ruta() {
     const h = decodeURIComponent(location.hash.slice(1));
@@ -463,7 +487,7 @@
 
   /* ---------------- arranque ---------------- */
   function renderTodo() {
-    renderMenu(); pintarTema(); renderInicio(); renderPie();
+    renderMenu(); pintarTema(); renderInicio(); renderPie(); renderFlotantes();
     if (!$("#pagina").hidden) ruta();
   }
   $$(".lang button").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
