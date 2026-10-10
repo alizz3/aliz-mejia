@@ -218,14 +218,17 @@
     <section class="sec" id="experiencia" aria-labelledby="t-exp">
       <div class="wrap">
         <h2 class="h-sec h-sm" id="t-exp">${t.exp.titulo}</h2>
-        <ol class="linea">${TRAYECTORIA.map((h) => `
-          <li class="hito ${h.tipo}">
-            <span class="tag">${t.exp[h.tipo]}</span>${h.periodo ? `<span class="per">${esc(tx(h.periodo))}</span>` : ""}
-            <h3>${esc(h.lugar)}</h3>
-            <span class="cargo">${esc(tx(h.cargo))}</span>
-            <p>${esc(tx(h.texto))}</p>
-          </li>`).join("")}
-        </ol>
+        <div class="exp-grupos">${["trabajo", "estudio"].map((tipo) => `
+          <div class="exp-grupo"><h3 class="exp-sub">${t.exp[tipo]}</h3>
+          <ol class="linea">${TRAYECTORIA.filter((h) => h.tipo === tipo).map((h) => `
+            <li class="hito ${h.tipo}">
+              ${h.periodo ? `<span class="per">${esc(tx(h.periodo))}</span>` : ""}
+              <h4>${esc(h.lugar)}</h4>
+              <span class="cargo">${esc(tx(h.cargo))}</span>
+              <p>${esc(tx(h.texto))}</p>
+            </li>`).join("")}
+          </ol></div>`).join("")}
+        </div>
       </div>
     </section>
 
