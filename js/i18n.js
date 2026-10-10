@@ -34,7 +34,7 @@ window.I18N = {
     sobre: {
       eyebrow: "Sobre mí",
       titulo: "Desarrolladora curiosa, enfocada en que las cosas <em>funcionen</em>",
-      txt: "Estudio Ingeniería de Sistemas y construyo software para negocios, para mi familia y para mí. Trabajé como Asistente de Desarrollo Digital en Andrec Corporation, con módulos para Odoo, sitios web y diseño gráfico. Hoy hago proyectos freelance. Antes de escribir código pregunto quién lo va a usar y desde qué celular.",
+      txt: "Estudio Ingeniería de Sistemas y construyo software para negocios, para mi familia y para mí. Trabajé más de dos años y medio en Andrec Corporation (2023–2025), primero como aprendiz y luego como Auxiliar de Desarrollo Digital, con módulos para Odoo, sitios web y diseño gráfico. Hoy hago proyectos freelance. Antes de escribir código pregunto quién lo va a usar y desde qué celular.",
       puntos: ["Seis proyectos propios y de clientes en línea", "Diseño pensando en quien lo usa, no en la demo", "Seguridad desde el día uno: reglas, validación y nada secreto en el frontend"],
       busco: "Busco un puesto de desarrollo (remoto) y proyectos freelance de tiendas, dashboards y herramientas internas.",
       cta: "Escríbeme",
@@ -94,7 +94,7 @@ window.I18N = {
     sobre: {
       eyebrow: "About me",
       titulo: "A curious developer focused on things that <em>work</em>",
-      txt: "I study Systems Engineering and build software for businesses, my family and myself. I worked as a Digital Development Assistant at Andrec Corporation, building Odoo modules, websites and graphic design. Now I take freelance projects. Before writing code, I ask who will use it and on what phone.",
+      txt: "I study Systems Engineering and build software for businesses, my family and myself. I spent over two and a half years at Andrec Corporation (2023–2025), first as an apprentice and then as a Digital Development Assistant, building Odoo modules, websites and graphic design. Now I take freelance projects. Before writing code, I ask who will use it and on what phone.",
       puntos: ["Six of my own and client projects are live", "I design for the person using it, not for the demo", "Security from day one: rules, validation and nothing secret in the frontend"],
       busco: "Looking for a (remote) developer role and freelance projects: stores, dashboards and internal tools.",
       cta: "Email me",
@@ -154,7 +154,7 @@ window.I18N = {
     sobre: {
       eyebrow: "Sobre mim",
       titulo: "Desenvolvedora curiosa, focada em que as coisas <em>funcionem</em>",
-      txt: "Estudo Engenharia de Sistemas e construo software para negócios, para minha família e para mim. Trabalhei como Assistente de Desenvolvimento Digital na Andrec Corporation, com módulos para Odoo, sites e design gráfico. Hoje faço projetos freelance. Antes de escrever código, pergunto quem vai usar e em qual celular.",
+      txt: "Estudo Engenharia de Sistemas e construo software para negócios, para minha família e para mim. Trabalhei mais de dois anos e meio na Andrec Corporation (2023–2025), primeiro como aprendiz e depois como Assistente de Desenvolvimento Digital, com módulos para Odoo, sites e design gráfico. Hoje faço projetos freelance. Antes de escrever código, pergunto quem vai usar e em qual celular.",
       puntos: ["Seis projetos próprios e de clientes no ar", "Projeto para quem usa, não para a demo", "Segurança desde o primeiro dia: regras, validação e nada secreto no frontend"],
       busco: "Procuro uma vaga de desenvolvimento (remota) e projetos freelance de lojas, painéis e ferramentas internas.",
       cta: "Escreva para mim",

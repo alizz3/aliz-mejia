@@ -463,7 +463,7 @@ const pizzaFlavorOut = name =>
       es: {
         tipo: "Módulos de ERP",
         resumen: "Módulos a la medida para el ERP Odoo 16 en Andrec Corporation S.A.: reglas de negocio en inventario, solicitudes y facturación.",
-        rol: "Desarrollo de módulos como Asistente de Desarrollo Digital en Andrec.",
+        rol: "Desarrollo de módulos como Auxiliar de Desarrollo Digital en Andrec.",
         contexto: "En Andrec el día a día pasaba por Odoo 16 y había procesos que el sistema estándar no controlaba.",
         problema: "Se podían avanzar solicitudes a etapas no permitidas, elegir clientes bloqueados y calcular a mano la fecha límite de pago.",
         objetivo: "Llevar esas reglas al propio ERP para que el sistema las haga cumplir.",
@@ -719,12 +719,15 @@ window.HABILIDADES = [
    periodo: POR COMPLETAR donde está en null (ej. "2023 – 2024").
 */
 window.TRAYECTORIA = [
-  { tipo: "trabajo", lugar: "Freelance", periodo: { es: "Actualidad", en: "Present", pt: "Atual" },
+  { tipo: "trabajo", lugar: "Freelance", periodo: { es: "2025 – actualidad", en: "2025 – present", pt: "2025 – atual" },
     cargo: { es: "Desarrolladora web", en: "Web developer", pt: "Desenvolvedora web" },
     texto: { es: "Sitios y aplicaciones para negocios: ColaxisPro (Colombia y Ecuador) y Emily Pizza (Bogotá).", en: "Websites and apps for businesses: ColaxisPro (Colombia and Ecuador) and Emily Pizza (Bogotá).", pt: "Sites e aplicativos para negócios: ColaxisPro (Colômbia e Equador) e Emily Pizza (Bogotá)." } },
-  { tipo: "trabajo", lugar: "Andrec Corporation S.A.", periodo: null,
-    cargo: { es: "Asistente de Desarrollo Digital", en: "Digital Development Assistant", pt: "Assistente de Desenvolvimento Digital" },
+  { tipo: "trabajo", lugar: "Andrec Corporation S.A.", periodo: { es: "oct. 2023 – dic. 2025", en: "Oct 2023 – Dec 2025", pt: "out. 2023 – dez. 2025" },
+    cargo: { es: "Auxiliar de Desarrollo Digital", en: "Digital Development Assistant", pt: "Assistente de Desenvolvimento Digital" },
     texto: { es: "Desarrollo web, módulos para el ERP Odoo 16, diseño gráfico y soporte a usuarios.", en: "Web development, Odoo 16 ERP modules, graphic design and user support.", pt: "Desenvolvimento web, módulos para o ERP Odoo 16, design gráfico e suporte a usuários." } },
+  { tipo: "trabajo", lugar: "Andrec Corporation S.A.", periodo: { es: "abr. 2023 – oct. 2023", en: "Apr 2023 – Oct 2023", pt: "abr. 2023 – out. 2023" },
+    cargo: { es: "Aprendiz de Desarrollo y Análisis de Software", en: "Software Development Apprentice", pt: "Aprendiz de Desenvolvimento de Software" },
+    texto: { es: "Prácticas: desarrollo y análisis de software con Odoo 16 y desarrollo web.", en: "Apprenticeship: software development and analysis with Odoo 16 and web development.", pt: "Estágio: desenvolvimento e análise de software com Odoo 16 e desenvolvimento web." } },
   { tipo: "estudio", lugar: "Universidad del Tolima · IDEAD", periodo: { es: "En curso", en: "In progress", pt: "Em andamento" },
     cargo: { es: "Ingeniería de Sistemas", en: "Systems Engineering (B.Eng.)", pt: "Engenharia de Sistemas" },
     texto: { es: "Modalidad a distancia.", en: "Distance program.", pt: "Modalidade a distância." } },

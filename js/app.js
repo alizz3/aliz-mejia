@@ -220,7 +220,7 @@
         <h2 class="h-sec h-sm" id="t-exp">${t.exp.titulo}</h2>
         <ol class="linea">${TRAYECTORIA.map((h) => `
           <li class="hito ${h.tipo}">
-            <span class="tag">${t.exp[h.tipo]}${h.periodo ? ` · ${esc(tx(h.periodo))}` : ""}</span>
+            <span class="tag">${t.exp[h.tipo]}</span>${h.periodo ? `<span class="per">${esc(tx(h.periodo))}</span>` : ""}
             <h3>${esc(h.lugar)}</h3>
             <span class="cargo">${esc(tx(h.cargo))}</span>
             <p>${esc(tx(h.texto))}</p>

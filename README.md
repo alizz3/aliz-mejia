@@ -59,7 +59,7 @@ Después pon `fotoSobreMi: true` en `PERFIL` (inicio de `js/datos.js`). Mientras
 ## Por completar
 
 - [ ] Enlace en vivo de .EXE (`vivo` en `js/datos.js`).
-- [ ] Fechas en Andrec Corporation (`periodo` en `TRAYECTORIA`).
+- [x] Fechas en Andrec Corporation (tomadas de LinkedIn).
 - [ ] Decidir qué repositorios hacer públicos. Los privados se muestran como "Código privado" y no enlazan.
 - [ ] Confirmar para quién fueron TearSpa y Laser Center (2023).
 - [ ] Tu foto para Sobre mí.

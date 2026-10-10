@@ -288,7 +288,8 @@ a.link-arrow:hover svg { transform: translateX(3px); }
 .hito::before { content: ""; position: absolute; left: 0; top: 0; width: 16px; height: 16px; border-radius: 50%; background: var(--bg); border: 2px solid var(--lav-brand); }
 .hito.estudio::before { border-color: var(--pink-brand); }
 .hito .tag { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; font-weight: 600; color: var(--muted); }
-.hito h3 { font-size: 17px; font-weight: 700; margin-top: 4px; }
+.hito .per { display: block; font-family: var(--mono); font-size: 12px; color: var(--ink); margin-top: 2px; }
+.hito h3 { font-size: 17px; font-weight: 700; margin-top: 6px; }
 .hito .cargo { display: block; color: var(--lav); font-weight: 600; font-size: 14px; }
 .hito p { color: var(--muted); font-size: 14px; margin-top: 6px; }
 @media (max-width: 560px) {
