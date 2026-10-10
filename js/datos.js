@@ -733,8 +733,8 @@ window.TRAYECTORIA = [
     texto: { es: "Modalidad a distancia.", en: "Distance program.", pt: "Modalidade a distância." } },
   { tipo: "estudio", lugar: "SENA", periodo: { es: "jul. 2022 – nov. 2023", en: "Jul 2022 – Nov 2023", pt: "jul. 2022 – nov. 2023" },
     cargo: { es: "Técnico en Programación de Software", en: "Software Programming Technician", pt: "Técnico em Programação de Software" },
-    texto: { es: "Programación, desarrollo web y React. Las prácticas fueron en Andrec.", en: "Programming, web development and React. The apprenticeship was at Andrec.", pt: "Programação, desenvolvimento web e React. O estágio foi na Andrec." } },
+    texto: { es: "Titulada. Programación, desarrollo web y React; las prácticas fueron en Andrec.", en: "Completed with certificate. Programming, web development and React; the apprenticeship was at Andrec.", pt: "Concluído com certificado. Programação, desenvolvimento web e React; o estágio foi na Andrec." } },
   { tipo: "estudio", lugar: "Kuepa EduTech", periodo: { es: "ene. 2022 – ago. 2022", en: "Jan 2022 – Aug 2022", pt: "jan. 2022 – ago. 2022" },
-    cargo: { es: "Técnico en Desarrollo de Páginas Web", en: "Web Development Technician", pt: "Técnico em Desenvolvimento Web" },
-    texto: { es: "Desarrollo de páginas web, contenido digital y multimedia.", en: "Web pages, digital content and multimedia.", pt: "Páginas web, conteúdo digital e multimídia." } },
+    cargo: { es: "Bootcamp intensivo de desarrollo web", en: "Intensive web development bootcamp", pt: "Bootcamp intensivo de desenvolvimento web" },
+    texto: { es: "Seis meses de desarrollo web y React. Mi primer acercamiento a la programación.", en: "Six months of web development and React. My first step into programming.", pt: "Seis meses de desenvolvimento web e React. Meu primeiro contato com a programação." } },
 ];
