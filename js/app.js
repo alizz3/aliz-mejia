@@ -432,9 +432,8 @@
         </div>
         <nav aria-label="${t.pie.navegacion}"><h2>${t.pie.navegacion}</h2>${SECCIONES.map((id) => `<a href="#${id}">${t.nav[id]}</a>`).join("")}</nav>
         <nav aria-label="${t.pie.proyectos}"><h2>${t.pie.proyectos}</h2>${dest.map((p) => `<a href="#/proyecto/${p.slug}">${esc(p.nombre)}</a>`).join("")}<a href="#/proyectos">${t.dest.todos}</a></nav>
-        <div class="pie-con"><h2>${t.pie.contacto}</h2><a href="mailto:${P.email}">${P.email}</a><span>${t.pie.remoto}</span></div>
+        <div class="pie-con"><h2>${t.pie.contacto}</h2><a href="mailto:${P.email}">${P.email}</a><span>${t.pie.remoto}</span>${P.cafe ? `<a class="btn-cafe" href="${P.cafe}" target="_blank" rel="noopener" title="${esc(t.pie.cafeTxt)}">${ico("i-cafe")} ${t.pie.cafe}</a>` : ""}</div>
       </div>
-      ${P.cafe ? `<div class="cafe"><span>${t.pie.cafeTxt}</span><a class="btn-cafe" href="${P.cafe}" target="_blank" rel="noopener">${ico("i-cafe")} ${t.pie.cafe}</a></div>` : ""}
       <div class="legal"><span>© ${new Date().getFullYear()} Aliz Mejía · ${t.pie.hecho}</span><span>${t.pie.derechos}</span></div>
     </div>`;
   }
