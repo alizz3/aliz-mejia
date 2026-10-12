@@ -432,7 +432,7 @@
         </div>
         <nav aria-label="${t.pie.navegacion}"><h2>${t.pie.navegacion}</h2>${SECCIONES.map((id) => `<a href="#${id}">${t.nav[id]}</a>`).join("")}</nav>
         <nav aria-label="${t.pie.proyectos}"><h2>${t.pie.proyectos}</h2>${dest.map((p) => `<a href="#/proyecto/${p.slug}">${esc(p.nombre)}</a>`).join("")}<a href="#/proyectos">${t.dest.todos}</a></nav>
-        <div class="pie-con"><h2>${t.pie.contacto}</h2><a href="mailto:${P.email}">${P.email}</a><a href="https://wa.me/${P.whatsapp}" target="_blank" rel="noopener">WhatsApp ${P.whatsappTexto}</a><span>${t.pie.remoto}</span></div>
+        <div class="pie-con"><h2>${t.pie.contacto}</h2><a href="mailto:${P.email}">${P.email}</a><span>${t.pie.remoto}</span></div>
       </div>
       <div class="legal"><span>© ${new Date().getFullYear()} Aliz Mejía · ${t.pie.hecho}</span><span>${t.pie.derechos}</span></div>
     </div>`;
@@ -444,10 +444,8 @@
     const f = T().fab; const P = PERFIL;
     $("#fab-txt").textContent = f.boton;
     arriba.setAttribute("aria-label", f.arriba);
-    const wa = `https://wa.me/${P.whatsapp}?text=${encodeURIComponent(f.mensaje)}`;
     panel.innerHTML = `
       <p class="fab-tit">${f.titulo}</p>
-      <a role="menuitem" class="fab-op" href="${wa}" target="_blank" rel="noopener"><span class="fab-ico wa">${ico("i-wa")}</span><span><b>${f.whatsapp}</b><small>${f.whatsappSub}</small></span></a>
       <div class="fab-op"><a role="menuitem" class="fab-op-link" href="mailto:${P.email}"><span class="fab-ico">${ico("i-mail")}</span><span><b>${f.correo}</b><small>${P.email}</small></span></a><button type="button" class="fab-copiar" data-copiar="${P.email}">${f.copiar}</button></div>
       <a role="menuitem" class="fab-op" href="${P.linkedin}" target="_blank" rel="noopener"><span class="fab-ico">${ico("i-in")}</span><span><b>${f.linkedin}</b><small>${f.linkedinSub}</small></span></a>`;
   }

@@ -1,14 +1,14 @@
 /* Textos de la interfaz en español, inglés y portugués. */
 window.I18N = {
   es: {
-    fab: { boton: "Contáctame", arriba: "Volver arriba", titulo: "¿Hablamos?", whatsapp: "WhatsApp", whatsappSub: "Respondo más rápido por aquí", correo: "Correo", linkedin: "LinkedIn", linkedinSub: "Mi perfil profesional", copiar: "Copiar", mensaje: "Hola Aliz, vi tu portafolio y quiero hablar contigo sobre " },
+    fab: { boton: "Contáctame", arriba: "Volver arriba", titulo: "¿Hablamos?", correo: "Correo", linkedin: "LinkedIn", linkedinSub: "Mi perfil profesional", copiar: "Copiar", mensaje: "Hola Aliz, vi tu portafolio y quiero hablar contigo sobre " },
     skip: "Saltar al contenido",
     nav: { inicio: "Inicio", proyectos: "Proyectos", lab: "Lab", sobre: "Sobre mí", experiencia: "Experiencia", contacto: "Contacto" },
     hablemos: "Hablemos",
     tema: { oscuro: "Cambiar a modo oscuro", claro: "Cambiar a modo claro" },
     menu: "Abrir menú",
     hero: {
-      eyebrow: "Villavicencio · Freelance y remoto",
+      eyebrow: "Bogotá, Colombia · Freelance y remoto",
       rol: "Desarrolladora de software",
       lead: "Construyo aplicaciones web completas: <strong>la base de datos, la lógica y una interfaz que se entiende a la primera.</strong>",
       chips: ["Aplicaciones web", "Dashboards", "Integraciones", "UX/UI"],
@@ -42,7 +42,7 @@ window.I18N = {
     },
     exp: { titulo: "Experiencia y formación", trabajo: "Experiencia", estudio: "Formación" },
     cta: { titulo: "¿Tienes un proyecto en mente?", sub: "Escríbeme y lo hablamos. Respondo en español, inglés o portugués.", boton: "Escríbeme", copiar: "Copiar correo" },
-    pie: { desc: "Desarrolladora de software. Aplicaciones web, dashboards e integraciones.", navegacion: "Navegación", proyectos: "Proyectos", contacto: "Contacto", remoto: "Villavicencio, Colombia · remoto", hecho: "Diseñado y desarrollado por Aliz Mejía.", derechos: "Todos los proyectos mostrados son trabajo real." },
+    pie: { desc: "Desarrolladora de software. Aplicaciones web, dashboards e integraciones.", navegacion: "Navegación", proyectos: "Proyectos", contacto: "Contacto", remoto: "Bogotá, Colombia · remoto", hecho: "Diseñado y desarrollado por Aliz Mejía.", derechos: "Todos los proyectos mostrados son trabajo real." },
     paginas: {
       proyectos: ["Todos mis proyectos", "Filtra por categoría o busca por nombre o tecnología."],
       habilidades: ["Tecnologías", "Solo lo que aparece en mis repositorios. Cada una enlaza a los proyectos donde la usé."],
@@ -62,14 +62,14 @@ window.I18N = {
   },
 
   en: {
-    fab: { boton: "Contact me", arriba: "Back to top", titulo: "Let's talk", whatsapp: "WhatsApp", whatsappSub: "Fastest way to reach me", correo: "Email", linkedin: "LinkedIn", linkedinSub: "My professional profile", copiar: "Copy", mensaje: "Hi Aliz, I saw your portfolio and I'd like to talk about " },
+    fab: { boton: "Contact me", arriba: "Back to top", titulo: "Let's talk", correo: "Email", linkedin: "LinkedIn", linkedinSub: "My professional profile", copiar: "Copy", mensaje: "Hi Aliz, I saw your portfolio and I'd like to talk about " },
     skip: "Skip to content",
     nav: { inicio: "Home", proyectos: "Projects", lab: "Lab", sobre: "About", experiencia: "Experience", contacto: "Contact" },
     hablemos: "Let's talk",
     tema: { oscuro: "Switch to dark mode", claro: "Switch to light mode" },
     menu: "Open menu",
     hero: {
-      eyebrow: "Villavicencio, Colombia · Freelance and remote",
+      eyebrow: "Bogotá, Colombia · Freelance and remote",
       rol: "Software developer",
       lead: "I build complete web apps: <strong>the database, the logic and an interface people get on first look.</strong>",
       chips: ["Web apps", "Dashboards", "Integrations", "UX/UI"],
@@ -103,7 +103,7 @@ window.I18N = {
     },
     exp: { titulo: "Experience and education", trabajo: "Experience", estudio: "Education" },
     cta: { titulo: "Have a project in mind?", sub: "Write to me and let's talk. I reply in Spanish, English or Portuguese.", boton: "Email me", copiar: "Copy email" },
-    pie: { desc: "Software developer. Web apps, dashboards and integrations.", navegacion: "Navigation", proyectos: "Projects", contacto: "Contact", remoto: "Villavicencio, Colombia · remote", hecho: "Designed and built by Aliz Mejía.", derechos: "Every project shown is real work." },
+    pie: { desc: "Software developer. Web apps, dashboards and integrations.", navegacion: "Navigation", proyectos: "Projects", contacto: "Contact", remoto: "Bogotá, Colombia · remote", hecho: "Designed and built by Aliz Mejía.", derechos: "Every project shown is real work." },
     paginas: {
       proyectos: ["All my projects", "Filter by category or search by name or technology."],
       habilidades: ["Technologies", "Only what appears in my repositories. Each links to the projects where I used it."],
@@ -123,14 +123,14 @@ window.I18N = {
   },
 
   pt: {
-    fab: { boton: "Fale comigo", arriba: "Voltar ao topo", titulo: "Vamos conversar?", whatsapp: "WhatsApp", whatsappSub: "Respondo mais rápido por aqui", correo: "E-mail", linkedin: "LinkedIn", linkedinSub: "Meu perfil profissional", copiar: "Copiar", mensaje: "Oi Aliz, vi seu portfólio e quero falar sobre " },
+    fab: { boton: "Fale comigo", arriba: "Voltar ao topo", titulo: "Vamos conversar?", correo: "E-mail", linkedin: "LinkedIn", linkedinSub: "Meu perfil profissional", copiar: "Copiar", mensaje: "Oi Aliz, vi seu portfólio e quero falar sobre " },
     skip: "Pular para o conteúdo",
     nav: { inicio: "Início", proyectos: "Projetos", lab: "Lab", sobre: "Sobre mim", experiencia: "Experiência", contacto: "Contato" },
     hablemos: "Vamos conversar",
     tema: { oscuro: "Mudar para modo escuro", claro: "Mudar para modo claro" },
     menu: "Abrir menu",
     hero: {
-      eyebrow: "Villavicencio, Colômbia · Freelance e remoto",
+      eyebrow: "Bogotá, Colômbia · Freelance e remoto",
       rol: "Desenvolvedora de software",
       lead: "Construo aplicações web completas: <strong>o banco de dados, a lógica e uma interface que se entende de primeira.</strong>",
       chips: ["Aplicações web", "Painéis", "Integrações", "UX/UI"],
@@ -164,7 +164,7 @@ window.I18N = {
     },
     exp: { titulo: "Experiência e formação", trabajo: "Experiência", estudio: "Formação" },
     cta: { titulo: "Tem um projeto em mente?", sub: "Escreva para mim e conversamos. Respondo em espanhol, inglês ou português.", boton: "Escreva para mim", copiar: "Copiar e-mail" },
-    pie: { desc: "Desenvolvedora de software. Aplicações web, painéis e integrações.", navegacion: "Navegação", proyectos: "Projetos", contacto: "Contato", remoto: "Villavicencio, Colômbia · remoto", hecho: "Projetado e desenvolvido por Aliz Mejía.", derechos: "Todos os projetos mostrados são trabalho real." },
+    pie: { desc: "Desenvolvedora de software. Aplicações web, painéis e integrações.", navegacion: "Navegação", proyectos: "Projetos", contacto: "Contato", remoto: "Bogotá, Colômbia · remoto", hecho: "Projetado e desenvolvido por Aliz Mejía.", derechos: "Todos os projetos mostrados são trabalho real." },
     paginas: {
       proyectos: ["Todos os meus projetos", "Filtre por categoria ou busque por nome ou tecnologia."],
       habilidades: ["Tecnologias", "Só o que aparece nos meus repositórios. Cada uma leva aos projetos onde a usei."],
