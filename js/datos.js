@@ -15,6 +15,7 @@ window.PERFIL = {
   whatsappTexto: "+57 311 307 1168",
   github: "https://github.com/alizz3",
   linkedin: "https://www.linkedin.com/in/alizz-doblezz",
+  cafe: "https://buymeacoffee.com/alizz",
   // Cuando tengas tu foto, ponla en assets/foto/aliz.webp y cambia a true.
   foto: false,
   fotoSobreMi: false,

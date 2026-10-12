@@ -42,7 +42,7 @@ window.I18N = {
     },
     exp: { titulo: "Experiencia y formación", trabajo: "Experiencia", estudio: "Formación" },
     cta: { titulo: "¿Tienes un proyecto en mente?", sub: "Escríbeme y lo hablamos. Respondo en español, inglés o portugués.", boton: "Escríbeme", copiar: "Copiar correo" },
-    pie: { desc: "Desarrolladora de software. Aplicaciones web, dashboards e integraciones.", navegacion: "Navegación", proyectos: "Proyectos", contacto: "Contacto", remoto: "Bogotá, Colombia · remoto", hecho: "Diseñado y desarrollado por Aliz Mejía.", derechos: "Todos los proyectos mostrados son trabajo real." },
+    pie: { desc: "Desarrolladora de software. Aplicaciones web, dashboards e integraciones.", navegacion: "Navegación", proyectos: "Proyectos", contacto: "Contacto", remoto: "Bogotá, Colombia · remoto", hecho: "Diseñado y desarrollado por Aliz Mejía.", derechos: "Todos los proyectos mostrados son trabajo real.", cafeTxt: "¿Te sirvió algo de lo que hago?", cafe: "Invítame un café" },
     paginas: {
       proyectos: ["Todos mis proyectos", "Filtra por categoría o busca por nombre o tecnología."],
       habilidades: ["Tecnologías", "Solo lo que aparece en mis repositorios. Cada una enlaza a los proyectos donde la usé."],
@@ -103,7 +103,7 @@ window.I18N = {
     },
     exp: { titulo: "Experience and education", trabajo: "Experience", estudio: "Education" },
     cta: { titulo: "Have a project in mind?", sub: "Write to me and let's talk. I reply in Spanish, English or Portuguese.", boton: "Email me", copiar: "Copy email" },
-    pie: { desc: "Software developer. Web apps, dashboards and integrations.", navegacion: "Navigation", proyectos: "Projects", contacto: "Contact", remoto: "Bogotá, Colombia · remote", hecho: "Designed and built by Aliz Mejía.", derechos: "Every project shown is real work." },
+    pie: { desc: "Software developer. Web apps, dashboards and integrations.", navegacion: "Navigation", proyectos: "Projects", contacto: "Contact", remoto: "Bogotá, Colombia · remote", hecho: "Designed and built by Aliz Mejía.", derechos: "Every project shown is real work.", cafeTxt: "Found something I made useful?", cafe: "Buy me a coffee" },
     paginas: {
       proyectos: ["All my projects", "Filter by category or search by name or technology."],
       habilidades: ["Technologies", "Only what appears in my repositories. Each links to the projects where I used it."],
@@ -164,7 +164,7 @@ window.I18N = {
     },
     exp: { titulo: "Experiência e formação", trabajo: "Experiência", estudio: "Formação" },
     cta: { titulo: "Tem um projeto em mente?", sub: "Escreva para mim e conversamos. Respondo em espanhol, inglês ou português.", boton: "Escreva para mim", copiar: "Copiar e-mail" },
-    pie: { desc: "Desenvolvedora de software. Aplicações web, painéis e integrações.", navegacion: "Navegação", proyectos: "Projetos", contacto: "Contato", remoto: "Bogotá, Colômbia · remoto", hecho: "Projetado e desenvolvido por Aliz Mejía.", derechos: "Todos os projetos mostrados são trabalho real." },
+    pie: { desc: "Desenvolvedora de software. Aplicações web, painéis e integrações.", navegacion: "Navegação", proyectos: "Projetos", contacto: "Contato", remoto: "Bogotá, Colômbia · remoto", hecho: "Projetado e desenvolvido por Aliz Mejía.", derechos: "Todos os projetos mostrados são trabalho real.", cafeTxt: "Algo do que faço te ajudou?", cafe: "Me pague um café" },
     paginas: {
       proyectos: ["Todos os meus projetos", "Filtre por categoria ou busque por nome ou tecnologia."],
       habilidades: ["Tecnologias", "Só o que aparece nos meus repositórios. Cada uma leva aos projetos onde a usei."],
