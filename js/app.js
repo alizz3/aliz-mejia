@@ -128,9 +128,6 @@
   function renderInicio() {
     const t = T(); const P = PERFIL;
     const dest = PROYECTOS.filter((p) => p.destacado);
-    const vane = porSlug("el-taller-de-vane"); const mumu = porSlug("mumu");
-    const pantalla = vane?.imagenes.find((i) => i.tipo === "desk");
-    const cel = (mumu || vane)?.imagenes.find((i) => i.tipo === "mob");
 
     $("#inicio-raiz").innerHTML = `
     <section class="hero" id="inicio" aria-labelledby="hero-titulo">
@@ -154,9 +151,7 @@
         <div class="hero-vis" aria-hidden="true">
           <div class="halo"></div>
           <span class="estrella e1">${ico("i-star")}</span><span class="estrella e2">${ico("i-star")}</span>
-          <div class="laptop"><div class="laptop-pant">${pantalla ? `<img src="${pantalla.src}" alt="" width="1440" height="900">` : ""}</div><div class="laptop-base"></div></div>
-          ${cel ? `<div class="hero-tel"><img src="${cel.src}" alt="" width="390" height="844"></div>` : ""}
-          <div class="codigo-flot"><div class="bar"><i></i><i></i><i></i></div><span class="tk-k">const</span> aliz = {<br>&nbsp;&nbsp;stack: [<span class="tk-s">"Vue"</span>, <span class="tk-s">"React"</span>, <span class="tk-s">"Firebase"</span>],<br>&nbsp;&nbsp;foco: <span class="tk-s">"apps que se usan de verdad"</span>,<br>&nbsp;&nbsp;remoto: <span class="tk-p">true</span><br>};</div>
+          <img class="ilustracion" src="assets/marca/ilustracion.webp" alt="" width="1200" height="585" fetchpriority="high">
         </div>
       </div>
     </section>
