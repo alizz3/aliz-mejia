@@ -151,7 +151,7 @@
         <div class="hero-vis" aria-hidden="true">
           <div class="halo"></div>
           <span class="estrella e1">${ico("i-star")}</span><span class="estrella e2">${ico("i-star")}</span>
-          <img class="ilustracion" src="assets/marca/ilustracion.webp" alt="" width="1200" height="585" fetchpriority="high">
+          <img class="ilustracion" src="assets/marca/ilustracion.webp" alt="" width="1200" height="643" fetchpriority="high">
         </div>
       </div>
     </section>
