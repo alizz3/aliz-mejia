@@ -36,7 +36,7 @@ window.PROYECTOS = [
     estado: "vivo",
     anio: "2026",
     categorias: ["web", "dashboard", "backend"],
-    stack: ["Vue 3", "Vite", "Firebase Auth", "Firestore", "Vercel Functions", "Google OAuth", "Gmail API", "Calendar API", "Classroom API", "Moodle Web Services", "PWA"],
+    stack: ["Vue 3", "Vite", "Firebase Auth", "Firestore", "Vercel Functions", "Google OAuth", "Gmail API", "Calendar API", "Classroom API", "Moodle Web Services", "Groq", "Android (Java)", "PWA"],
     vivo: "https://mu-mu-blond.vercel.app/",
     repo: { url: "https://github.com/alizz3/MuMu", publico: true },
     lab: null,
@@ -55,7 +55,7 @@ window.PROYECTOS = [
         problema: "Las apps de tareas solo muestran listas: no saben cuánto tiempo libre tengo, qué vence primero ni qué me ha funcionado antes. Y casi todas castigan cuando pierdes una racha.",
         objetivo: "Una app que una todas mis fuentes, me diga qué hacer en el tiempo libre que tengo y aprenda de mis propios datos, sin generar culpa.",
         solucion: "Una app en Vue 3 con un motor propio que cruza agenda, fechas límite, prioridad, energía y tiempo libre para recomendar una sola acción. Se conecta con Gmail, Google Calendar y Classroom por OAuth (varias cuentas, permisos mínimos y sumables) y con Tu Aula vía Moodle. Incluye modo enfoque de 5 minutos, rachas flexibles, experimentos personales que construyen “mi propio método”, analítica sobre mis datos y una casita que se decora con el progreso real.",
-        funciones: ["“¿Qué hago ahora?”: recomendación según tiempo libre, fechas y energía", "Agenda que detecta huecos libres y agenda bloques para cada tarea", "Gmail, Calendar y Classroom con varias cuentas de Google", "Tu Aula (Moodle) con detección de tareas nuevas y cambios de fecha", "Modo “No quiero hacer esto 😭”: empezar con 5 minutos", "Hábitos con rachas flexibles (“18 de 24 días”)", "Mi cerebro: libros y podcasts → principios → experimentos", "Gamificación con la vaquita, Leo y Negra (ilustraciones SVG propias)", "Instalable como app (PWA) y modo claro/oscuro"],
+        funciones: ["“¿Qué hago ahora?”: recomendación según tiempo libre, fechas y energía", "Agenda que detecta huecos libres y agenda bloques para cada tarea", "Gmail, Calendar y Classroom con varias cuentas de Google", "Tu Aula (Moodle) con detección de tareas nuevas y cambios de fecha", "Modo “No quiero hacer esto 😭”: empezar con 5 minutos", "Hábitos con rachas flexibles (“18 de 24 días”)", "Mi cerebro: libros y podcasts → principios → experimentos", "Gamificación con la vaquita, Leo y Negra (ilustraciones SVG propias)", "Vaquita con IA (Groq) que responde sobre tus tareas, hábitos y agenda", "Garaje: hoja de vida del vehículo con mantenimientos, documentos y gastos", "Sesiones de cada materia, presenciales o virtuales, con enlace para entrar", "Importar tareas con IA y traer las de ClickUp", "App de Android con widget y alarma, además de instalable como PWA"],
         decisiones: ["Tokens de Google y de Moodle cifrados con AES-256-GCM en una zona de Firestore que el navegador no puede leer; la contraseña de Tu Aula se usa una vez y se descarta.", "Toda la API vive en una sola función serverless con un enrutador propio, para caber en el plan gratuito de Vercel.", "Permisos de Google incrementales: se suman sin perder los anteriores, y la app muestra lo que Google realmente entregó.", "Sin integraciones inventadas: lo que una web no puede hacer (leer el tiempo de pantalla, aparecer sobre otras apps) se registra a mano y queda listo para una futura app nativa."],
         aprendizajes: "Integrar APIs reales (OAuth, Moodle) enseña más sobre errores y permisos que cualquier tutorial. Próximo: conectar MuMu Finanzas y notificaciones push.",
       },
@@ -67,7 +67,7 @@ window.PROYECTOS = [
         problema: "To-do apps only show lists: they don't know how much free time I have, what's due first or what has worked for me before. And most of them punish you for breaking a streak.",
         objetivo: "One app that joins all my sources, tells me what to do with the free time I actually have and learns from my own data, without guilt.",
         solucion: "A Vue 3 app with its own engine that combines schedule, deadlines, priority, energy and free time to suggest a single action. It connects to Gmail, Google Calendar and Classroom through OAuth (multiple accounts, minimal and incremental permissions) and to Tu Aula through Moodle. It includes a 5-minute focus mode, flexible streaks, personal experiments that build “my own method”, analytics on my own data and a little house decorated with real progress.",
-        funciones: ["“What should I do now?”: a suggestion based on free time, deadlines and energy", "Planner that finds free blocks and schedules sessions for each task", "Gmail, Calendar and Classroom with multiple Google accounts", "Tu Aula (Moodle) with new-task and due-date-change detection", "“I don't want to do this 😭” mode: start with 5 minutes", "Habits with flexible streaks (“18 of 24 days”)", "Second brain: books and podcasts → principles → experiments", "Gamification with the cow, Leo and Negra (original SVG illustrations)", "Installable (PWA) with light and dark mode"],
+        funciones: ["“What should I do now?”: a suggestion based on free time, deadlines and energy", "Planner that finds free blocks and schedules sessions for each task", "Gmail, Calendar and Classroom with multiple Google accounts", "Tu Aula (Moodle) with new-task and due-date-change detection", "“I don't want to do this 😭” mode: start with 5 minutes", "Habits with flexible streaks (“18 of 24 days”)", "Second brain: books and podcasts → principles → experiments", "Gamification with the cow, Leo and Negra (original SVG illustrations)", "AI cow (Groq) that answers about your tasks, habits and schedule", "Garage: vehicle history with maintenance, documents and expenses", "Class sessions per subject, in person or online, with a join link", "Import tasks with AI and pull them from ClickUp", "Android app with a widget and an alarm, plus installable as a PWA"],
         decisiones: ["Google and Moodle tokens encrypted with AES-256-GCM in a Firestore area the browser can't read; the Tu Aula password is used once and discarded.", "The whole API runs in a single serverless function with a custom router, to fit Vercel's free plan.", "Incremental Google permissions: new ones add up without losing the old ones, and the app shows what Google actually granted.", "No fake integrations: what a website can't do (read screen time, draw over other apps) is logged manually and ready for a future native app."],
         aprendizajes: "Integrating real APIs (OAuth, Moodle) teaches more about errors and permissions than any tutorial. Next: connect MuMu Finanzas and push notifications.",
       },
@@ -79,7 +79,7 @@ window.PROYECTOS = [
         problema: "Os apps de tarefas só mostram listas: não sabem quanto tempo livre eu tenho, o que vence primeiro nem o que já funcionou para mim. E quase todos punem quando você perde uma sequência.",
         objetivo: "Um app que una todas as minhas fontes, diga o que fazer com o tempo livre que eu tenho e aprenda com os meus próprios dados, sem culpa.",
         solucion: "Um app em Vue 3 com um motor próprio que cruza agenda, prazos, prioridade, energia e tempo livre para recomendar uma única ação. Conecta-se ao Gmail, Google Agenda e Classroom via OAuth (várias contas, permissões mínimas e incrementais) e ao Tu Aula via Moodle. Inclui modo foco de 5 minutos, sequências flexíveis, experimentos pessoais que constroem “meu próprio método”, análises dos meus dados e uma casinha decorada com o progresso real.",
-        funciones: ["“O que eu faço agora?”: sugestão pelo tempo livre, prazos e energia", "Agenda que encontra horários livres e agenda blocos para cada tarefa", "Gmail, Agenda e Classroom com várias contas Google", "Tu Aula (Moodle) com detecção de tarefas novas e mudanças de prazo", "Modo “Não quero fazer isso 😭”: começar com 5 minutos", "Hábitos com sequências flexíveis (“18 de 24 dias”)", "Segundo cérebro: livros e podcasts → princípios → experimentos", "Gamificação com a vaquinha, Leo e Negra (ilustrações SVG próprias)", "Instalável (PWA) e modo claro/escuro"],
+        funciones: ["“O que eu faço agora?”: sugestão pelo tempo livre, prazos e energia", "Agenda que encontra horários livres e agenda blocos para cada tarefa", "Gmail, Agenda e Classroom com várias contas Google", "Tu Aula (Moodle) com detecção de tarefas novas e mudanças de prazo", "Modo “Não quero fazer isso 😭”: começar com 5 minutos", "Hábitos com sequências flexíveis (“18 de 24 dias”)", "Segundo cérebro: livros e podcasts → princípios → experimentos", "Gamificação com a vaquinha, Leo e Negra (ilustrações SVG próprias)", "Vaquinha com IA (Groq) que responde sobre suas tarefas, hábitos e agenda", "Garagem: histórico do veículo com manutenções, documentos e gastos", "Aulas de cada matéria, presenciais ou online, com link para entrar", "Importar tarefas com IA e trazer as do ClickUp", "App Android com widget e alarme, além de instalável como PWA"],
         decisiones: ["Tokens do Google e do Moodle criptografados com AES-256-GCM numa área do Firestore que o navegador não lê; a senha do Tu Aula é usada uma vez e descartada.", "Toda a API roda numa única função serverless com roteador próprio, para caber no plano gratuito da Vercel.", "Permissões do Google incrementais: as novas se somam sem perder as anteriores, e o app mostra o que o Google realmente concedeu.", "Sem integrações inventadas: o que um site não pode fazer (ler o tempo de tela, aparecer sobre outros apps) é registrado manualmente e fica pronto para um futuro app nativo."],
         aprendizajes: "Integrar APIs reais (OAuth, Moodle) ensina mais sobre erros e permissões do que qualquer tutorial. Próximo: conectar o MuMu Finanzas e notificações push.",
       },
@@ -93,6 +93,75 @@ window.PROYECTOS = [
   const c = crypto.createCipheriv('aes-256-gcm', key(), iv)
   const data = Buffer.concat([c.update(JSON.stringify(value), 'utf8'), c.final()])
   return \`v1.\${iv.toString('base64url')}.\${c.getAuthTag().toString('base64url')}.\${data.toString('base64url')}\`
+}`,
+    },
+  },
+
+  {
+    slug: "torqueos",
+    nombre: "TorqueOS",
+    destacado: true,
+    estado: "desarrollo",
+    anio: "2026",
+    categorias: ["web", "dashboard", "backend"],
+    stack: ["Vue 3", "TypeScript", "Vite", "Tailwind CSS 4", "Supabase", "PostgreSQL", "Vercel Functions", "PWA", "Vitest"],
+    vivo: "https://torque-os-chi.vercel.app/",
+    repo: { url: "https://github.com/alizz3/TorqueOS", publico: false },
+    lab: null,
+    composicion: "mixta",
+    imagenes: [
+      { src: "assets/proyectos/torqueos-1.webp", tipo: "desk", alt: { es: "Inicio del administrador de TorqueOS con órdenes que requieren atención y carga de los mecánicos (datos de demostración)", en: "TorqueOS admin home with orders that need attention and mechanic workload (demo data)", pt: "Início do administrador do TorqueOS com ordens que pedem atenção e carga dos mecânicos (dados de demonstração)" } },
+      { src: "assets/proyectos/torqueos-3.webp", tipo: "mob", alt: { es: "Vista del mecánico en el celular: su cola del día", en: "Mechanic view on a phone: today's queue", pt: "Visão do mecânico no celular: a fila do dia" } },
+      { src: "assets/proyectos/torqueos-2.webp", tipo: "desk", alt: { es: "Tablero Kanban de órdenes por estado", en: "Kanban board of orders by status", pt: "Quadro Kanban de ordens por status" } },
+    ],
+    t: {
+      es: {
+        tipo: "Sistema de gestión para talleres",
+        resumen: "Recepción, órdenes, mecánicos, inventario, caja, clientes y fidelización para talleres de motos y carros, en una sola app.",
+        rol: "Proyecto propio: producto, diseño, frontend, modelo de datos y documentación.",
+        contexto: "Pensado para talleres de motos y carros que llevan la recepción, las órdenes y el historial de cada vehículo entre papel y chats.",
+        problema: "Cuando todo está disperso, el cliente no sabe en qué va su vehículo, el mecánico no ve su cola del día y el dueño no sabe cuánto entró en caja ni qué repuestos faltan.",
+        objetivo: "Un sistema que acompañe el vehículo desde que entra hasta que se entrega, con una vista para cada persona: dueño, caja, mecánico y cliente.",
+        solucion: "Tres experiencias sobre los mismos datos: administración (Kanban, órdenes, agenda, inventario, compras, ventas, caja, reportes y fidelización), mecánico (cola del día con botones grandes, checklist, cronómetro, fotos y hallazgos) y cliente (sus vehículos, historial oficial, aprobación de presupuestos, documentos con recordatorios y tarjeta de fidelización con QR). Además, un sitio público para agendar citas y seguir la orden con un enlace privado.",
+        funciones: ["Recepción completa: estado del vehículo, daños, fotos y servicios", "Tablero Kanban que pide control de calidad antes de entregar", "Presupuestos que el cliente aprueba desde su celular", "Inventario, compras con recepción parcial y ventas de mostrador", "Caja con apertura, cierre y anulaciones que no borran nada", "Fidelización con tarjeta QR y reglas configurables", "Roles: propietario, administrador, caja, mecánico y cliente", "Marca blanca: nombre, logo y textos por taller"],
+        decisiones: ["Hoy corre en modo demostración con datos ficticios en el navegador; la base de datos de producción es Supabase (PostgreSQL con permisos por fila), definida en migraciones.", "Las llaves de IA viven solo en funciones de Vercel, nunca en el navegador.", "El enlace de seguimiento es aleatorio, revocable y sin datos personales innecesarios.", "En caja nada se borra: los errores se anulan con un movimiento que compensa.", "Un documento de estado separa lo que funciona de lo que aún necesita conectar servicios, para no presentar como terminado algo que no lo está."],
+        aprendizajes: "Diseñar para cuatro tipos de usuario a la vez obliga a pensar los permisos desde el principio. Siguiente: conectar Supabase en producción y el primer taller.",
+      },
+      en: {
+        tipo: "Workshop management system",
+        resumen: "Check-in, work orders, mechanics, inventory, cash register, customers and loyalty for motorcycle and car workshops, in one app.",
+        rol: "My own project: product, design, frontend, data model and documentation.",
+        contexto: "Built for motorcycle and car workshops that keep check-ins, orders and each vehicle's history on paper and in chats.",
+        problema: "When everything is scattered, customers don't know where their vehicle is, mechanics can't see their queue for the day and owners don't know what came into the register or which parts are missing.",
+        objetivo: "A system that follows the vehicle from drop-off to pick-up, with a view for each person: owner, cashier, mechanic and customer.",
+        solucion: "Three experiences on the same data: admin (Kanban, orders, schedule, inventory, purchasing, sales, register, reports and loyalty), mechanic (today's queue with big buttons, checklist, timer, photos and findings) and customer (their vehicles, official history, quote approval, documents with reminders and a QR loyalty card). Plus a public site to book appointments and follow an order through a private link.",
+        funciones: ["Full check-in: vehicle condition, damage, photos and services", "Kanban board that asks for a quality check before delivery", "Quotes the customer approves from their phone", "Inventory, purchasing with partial receipts and counter sales", "Register with opening, closing and voids that never delete anything", "Loyalty with a QR card and configurable rules", "Roles: owner, admin, cashier, mechanic and customer", "White-label: name, logo and copy per workshop"],
+        decisiones: ["It currently runs in demo mode with fictional data in the browser; the production database is Supabase (PostgreSQL with row-level security), defined in migrations.", "AI keys live only in Vercel functions, never in the browser.", "The tracking link is random, revocable and carries no unnecessary personal data.", "Nothing is deleted from the register: mistakes are voided with an offsetting entry.", "A status document separates what works from what still needs services connected, so nothing is shown as finished when it isn't."],
+        aprendizajes: "Designing for four kinds of users at once forces you to think about permissions from the start. Next: connect Supabase in production and the first workshop.",
+      },
+      pt: {
+        tipo: "Sistema de gestão para oficinas",
+        resumen: "Recepção, ordens de serviço, mecânicos, estoque, caixa, clientes e fidelidade para oficinas de motos e carros, num só app.",
+        rol: "Projeto próprio: produto, design, frontend, modelo de dados e documentação.",
+        contexto: "Pensado para oficinas de motos e carros que registram a recepção, as ordens e o histórico de cada veículo entre papel e conversas.",
+        problema: "Quando tudo está espalhado, o cliente não sabe como está o veículo, o mecânico não vê a fila do dia e o dono não sabe quanto entrou no caixa nem quais peças faltam.",
+        objetivo: "Um sistema que acompanhe o veículo da chegada à entrega, com uma visão para cada pessoa: dono, caixa, mecânico e cliente.",
+        solucion: "Três experiências sobre os mesmos dados: administração (Kanban, ordens, agenda, estoque, compras, vendas, caixa, relatórios e fidelidade), mecânico (fila do dia com botões grandes, checklist, cronômetro, fotos e achados) e cliente (seus veículos, histórico oficial, aprovação de orçamentos, documentos com lembretes e cartão de fidelidade com QR). Além de um site público para agendar e acompanhar a ordem por um link privado.",
+        funciones: ["Recepção completa: estado do veículo, danos, fotos e serviços", "Quadro Kanban que pede controle de qualidade antes da entrega", "Orçamentos que o cliente aprova pelo celular", "Estoque, compras com recebimento parcial e vendas de balcão", "Caixa com abertura, fechamento e estornos que não apagam nada", "Fidelidade com cartão QR e regras configuráveis", "Perfis: proprietário, administrador, caixa, mecânico e cliente", "Marca branca: nome, logo e textos por oficina"],
+        decisiones: ["Hoje roda em modo demonstração com dados fictícios no navegador; o banco de produção é o Supabase (PostgreSQL com permissões por linha), definido em migrações.", "As chaves de IA ficam só em funções da Vercel, nunca no navegador.", "O link de acompanhamento é aleatório, revogável e sem dados pessoais desnecessários.", "No caixa nada é apagado: os erros são estornados com um lançamento que compensa.", "Um documento de status separa o que funciona do que ainda precisa de serviços conectados, para não apresentar como pronto o que não está."],
+        aprendizajes: "Projetar para quatro tipos de usuário ao mesmo tempo obriga a pensar as permissões desde o início. Próximo: conectar o Supabase em produção e a primeira oficina.",
+      },
+    },
+    flujo: ["Sitio público · citas y seguimiento", "App · Vue 3 + TypeScript", "Admin · Mecánico · Cliente", "Vercel Functions · IA", "Supabase · PostgreSQL + RLS"],
+    codigo: {
+      archivo: "src/data/services/loyalty.ts",
+      lenguaje: "ts",
+      texto: `export function orderQualifies(o: ServiceOrder, prog: LoyaltyProgram) {
+  if (!prog.active) return { ok: false, reason: 'El programa de fidelización está inactivo.' }
+  if (o.status !== 'delivered') return { ok: false, reason: 'La orden no ha sido entregada.' }
+  if (!prog.validLines.includes(o.line)) return { ok: false, reason: 'Esta línea de servicio no suma visitas.' }
+  if (orderTotals(o.items).net < prog.minOrderTotal) return { ok: false, reason: 'No alcanza el valor mínimo del programa.' }
+  return { ok: true }
 }`,
     },
   },
@@ -390,7 +459,7 @@ const pizzaFlavorOut = name =>
     slug: "maletica",
     nombre: "Maletica",
     logo: { claro: "assets/logos/maletica.svg", oscuro: "assets/logos/maletica.svg" },
-    destacado: true,
+    destacado: false,
     estado: "vivo",
     anio: "2026",
     categorias: ["web"],
@@ -448,6 +517,180 @@ const pizzaFlavorOut = name =>
 
 
   /* ---------------- Proyectos secundarios ---------------- */
+  {
+    slug: "pique",
+    nombre: "Pique",
+    destacado: false,
+    estado: "vivo",
+    anio: "2026",
+    categorias: ["web", "dashboard", "backend"],
+    stack: ["Vue 3", "Vite", "Firebase Auth", "Firestore", "Cloud Messaging", "Vercel Functions", "Leaflet + OpenStreetMap", "Cloudflare Turnstile", "Telegram Bot API", "PWA"],
+    vivo: "https://pique-wheat.vercel.app/",
+    repo: { url: "https://github.com/alizz3/pique", publico: false },
+    lab: null,
+    composicion: "mixta",
+    imagenes: [
+      { src: "assets/proyectos/pique-1.webp", tipo: "desk", alt: { es: "Página de Pique con lo que incluye la app de cada motero", en: "Pique page showing what each rider's app includes", pt: "Página do Pique com o que o app de cada motoqueiro inclui" } },
+      { src: "assets/proyectos/pique-2.webp", tipo: "mob", alt: { es: "Portada de Pique en el celular", en: "Pique landing page on a phone", pt: "Página inicial do Pique no celular" } },
+    ],
+    t: {
+      es: {
+        tipo: "Plataforma para moteros independientes",
+        resumen: "Cada motero tiene su propia app para recibir reservas de viajes, domicilios y mandados, con tarjeta digital con QR y un panel para su negocio. Sin comisión por servicio.",
+        rol: "Proyecto propio: producto, diseño, frontend, backend y parte legal.",
+        contexto: "Los moteros que trabajan por su cuenta reciben pedidos por WhatsApp a cualquier hora, y las apps de plataforma se quedan con una comisión y con sus clientes.",
+        problema: "Las reservas se cruzan, no saben cuánto les queda después de la gasolina y los clientes frecuentes se pierden.",
+        objetivo: "Que cada motero tenga su propia página y su propia app, con sus clientes, su tarifa y su marca.",
+        solucion: "Una página por motero (pique/nombre) con estado en vivo, servicios, tarifa y reseñas; reservas con precio estimado por kilómetro; seguimiento con enlace secreto; tarjeta digital con QR y contacto descargable; y un panel con estado, agenda, clientes, moto y finanzas. Avisos por Telegram para el motero y sus clientes.",
+        funciones: ["Página propia por motero con su logo y colores", "Reservas con precio por km, recargos y redondeo", "Seguimiento de la reserva con enlace secreto", "Tarjeta digital con QR y sticker imprimible", "Panel: estado, agenda, clientes, moto y finanzas", "Avisos por Telegram para motero y clientes", "Instalable: cada motero tiene su propio ícono de app"],
+        decisiones: ["El navegador no puede crear reservas: todo pasa por una función que valida, recalcula el precio, limita intentos y verifica el anti-spam.", "Mapas y rutas con OpenStreetMap (Leaflet, Photon y OSRM): gratis y sin llaves.", "Manifest por motero: al instalar la app se abre su página con su ícono.", "Pique solo da la tecnología: cada motero tiene su política de datos (Ley 1581) y sus términos."],
+        aprendizajes: "Un producto para otros obliga a pensar en lo legal y en quién responde por qué. Primer motero en línea; siguiente: abrirlo a más moteros con revisión manual.",
+      },
+      en: {
+        tipo: "Platform for independent riders",
+        resumen: "Each motorcycle rider gets their own app to take ride, delivery and errand bookings, with a QR business card and a panel for their business. No per-ride commission.",
+        rol: "My own project: product, design, frontend, backend and legal side.",
+        contexto: "Riders who work on their own get orders over WhatsApp at all hours, while ride-hailing apps keep a commission and their customers.",
+        problema: "Bookings overlap, they don't know what's left after fuel and regular customers get lost.",
+        objetivo: "Give each rider their own page and app, with their customers, their rate and their brand.",
+        solucion: "A page per rider (pique/name) with live status, services, rates and reviews; bookings with a per-km price estimate; tracking through a secret link; a QR business card with downloadable contact; and a panel for status, schedule, customers, bike and finances. Telegram alerts for the rider and their customers.",
+        funciones: ["A page per rider with their own logo and colors", "Bookings priced per km, with surcharges and rounding", "Booking tracking through a secret link", "QR business card and printable sticker", "Panel: status, schedule, customers, bike and finances", "Telegram alerts for rider and customers", "Installable: each rider has their own app icon"],
+        decisiones: ["The browser can't create bookings: everything goes through a function that validates, recalculates the price, rate-limits and checks the anti-spam.", "Maps and routes with OpenStreetMap (Leaflet, Photon and OSRM): free and keyless.", "A manifest per rider: installing the app opens their page with their icon.", "Pique only provides the technology: each rider has their own privacy policy (Colombian Law 1581) and terms."],
+        aprendizajes: "Building a product for others makes you think about the legal side and who is responsible for what. First rider live; next: open it to more riders with manual review.",
+      },
+      pt: {
+        tipo: "Plataforma para motoqueiros autônomos",
+        resumen: "Cada motoqueiro tem seu próprio app para receber reservas de corridas, entregas e recados, com cartão digital com QR e um painel para o negócio. Sem comissão por serviço.",
+        rol: "Projeto próprio: produto, design, frontend, backend e parte jurídica.",
+        contexto: "Os motoqueiros que trabalham por conta recebem pedidos pelo WhatsApp a qualquer hora, e os apps de plataforma ficam com uma comissão e com os clientes.",
+        problema: "As reservas se cruzam, eles não sabem quanto sobra depois da gasolina e os clientes frequentes se perdem.",
+        objetivo: "Que cada motoqueiro tenha sua própria página e seu próprio app, com seus clientes, sua tarifa e sua marca.",
+        solucion: "Uma página por motoqueiro (pique/nome) com status ao vivo, serviços, tarifa e avaliações; reservas com preço estimado por km; acompanhamento por link secreto; cartão digital com QR e contato para baixar; e um painel com status, agenda, clientes, moto e finanças. Avisos pelo Telegram para o motoqueiro e seus clientes.",
+        funciones: ["Página própria por motoqueiro com seu logo e cores", "Reservas com preço por km, adicionais e arredondamento", "Acompanhamento da reserva por link secreto", "Cartão digital com QR e adesivo para imprimir", "Painel: status, agenda, clientes, moto e finanças", "Avisos pelo Telegram para motoqueiro e clientes", "Instalável: cada motoqueiro tem seu próprio ícone de app"],
+        decisiones: ["O navegador não cria reservas: tudo passa por uma função que valida, recalcula o preço, limita tentativas e verifica o antispam.", "Mapas e rotas com OpenStreetMap (Leaflet, Photon e OSRM): grátis e sem chaves.", "Manifest por motoqueiro: ao instalar o app, abre a página dele com o ícone dele.", "O Pique só fornece a tecnologia: cada motoqueiro tem sua política de dados (Lei 1581) e seus termos."],
+        aprendizajes: "Um produto para outras pessoas obriga a pensar no jurídico e em quem responde pelo quê. Primeiro motoqueiro no ar; próximo: abrir para mais motoqueiros com revisão manual.",
+      },
+    },
+    flujo: ["Página del motero · Vue 3 + PWA", "API · Vercel Functions", "Turnstile · anti-spam", "Firestore · reservas y perfiles", "Telegram + FCM · avisos"],
+    codigo: {
+      archivo: "shared/pricing.js",
+      lenguaje: "js",
+      texto: `export const DEFAULT_FARES = {
+  perKm: 1800,            // COP por kilómetro de ruta
+  minimum: 6000,          // Valor mínimo por servicio
+  nightFrom: '21:00',     // Desde esta hora aplica recargo nocturno
+  nightPct: 20,
+  waitPerMin: 200,        // Espera después de los minutos gratis
+  freeWaitMin: 5,
+  roundTo: 500            // $7.230 → $7.500, para no manejar monedas
+}`,
+    },
+  },
+
+  {
+    slug: "vamos-donde-nata",
+    nombre: "Vamos donde Nata",
+    destacado: false,
+    estado: "vivo",
+    anio: "2026",
+    categorias: ["web", "cliente"],
+    stack: ["Vite", "HTML", "CSS", "JavaScript", "JSON", "PWA", "Vercel Analytics"],
+    vivo: "https://vamos-donde-nata.vercel.app/",
+    repo: { url: "https://github.com/alizz3/vamos-donde-nata", publico: false },
+    lab: null,
+    composicion: "mixta",
+    imagenes: [
+      { src: "assets/proyectos/nata-1.webp", tipo: "desk", alt: { es: "Inicio del sitio de Vamos donde Nata", en: "Vamos donde Nata home page", pt: "Página inicial do Vamos donde Nata" } },
+      { src: "assets/proyectos/nata-2.webp", tipo: "mob", alt: { es: "Menú por categorías en el celular", en: "Menu by category on a phone", pt: "Cardápio por categorias no celular" } },
+      { src: "assets/proyectos/nata-3.webp", tipo: "mob", alt: { es: "Portada en el celular con horario de hoy", en: "Mobile home with today's hours", pt: "Página inicial no celular com o horário de hoje" } },
+    ],
+    t: {
+      es: { tipo: "Sitio y menú digital", resumen: "Menú digital para un negocio de arepas, pinchos y chorizos al carbón en Villavicencio, pensado para abrirse con un QR en el local.", rol: "Freelance: diseño, desarrollo y publicación.", funciones: ["Menú por categorías generado en el build: carga rápido y Google lo lee", "“Abierto ahora / Cerrado · abre…” calculado con la hora de Colombia", "Vista rápida y productos agotados del día", "Sin base de datos: el contenido vive en dos archivos JSON", "Mapa de Google solo si la persona acepta cookies", "Instalable y funciona sin señal; privacidad (Ley 1581) y términos"], aprendizajes: "Lighthouse en móvil: 99 en rendimiento, 100 en accesibilidad y 100 en SEO. Pendiente: confirmar precios y fotos propias con el negocio." },
+      en: { tipo: "Website and digital menu", resumen: "A digital menu for a charcoal-grilled arepas, skewers and chorizo spot in Villavicencio, made to open from a QR code at the counter.", rol: "Freelance: design, development and launch.", funciones: ["Menu by category generated at build time: fast and readable by Google", "“Open now / Closed · opens at…” computed in Colombia's time zone", "Quick view and items sold out for the day", "No database: content lives in two JSON files", "Google Map loads only if the visitor accepts cookies", "Installable and works offline; privacy policy (Law 1581) and terms"], aprendizajes: "Mobile Lighthouse: 99 performance, 100 accessibility and 100 SEO. Pending: confirm prices and original photos with the business." },
+      pt: { tipo: "Site e cardápio digital", resumen: "Cardápio digital para um lugar de arepas, espetinhos e linguiças na brasa em Villavicencio, pensado para abrir com um QR no balcão.", rol: "Freelance: design, desenvolvimento e publicação.", funciones: ["Cardápio por categorias gerado no build: carrega rápido e o Google lê", "“Aberto agora / Fechado · abre…” calculado no fuso da Colômbia", "Visualização rápida e itens esgotados do dia", "Sem banco de dados: o conteúdo fica em dois arquivos JSON", "Mapa do Google só se a pessoa aceitar cookies", "Instalável e funciona sem sinal; privacidade (Lei 1581) e termos"], aprendizajes: "Lighthouse no celular: 99 de desempenho, 100 de acessibilidade e 100 de SEO. Pendente: confirmar preços e fotos próprias com o negócio." },
+    },
+  },
+
+  {
+    slug: "nivela",
+    nombre: "Nivela",
+    destacado: false,
+    estado: "desarrollo",
+    anio: "2026",
+    categorias: ["web", "backend"],
+    stack: ["React", "Vite", "Firebase Auth", "Firestore", "Vercel Functions", "Telegram Bot API", "Groq", "Gemini", "Vitest"],
+    vivo: "https://nivela-finance.vercel.app/",
+    repo: { url: "https://github.com/alizz3/nivela-finance", publico: false },
+    lab: null,
+    composicion: "telefonos",
+    imagenes: [
+      { src: "assets/proyectos/nivela-1.webp", tipo: "mob", alt: { es: "Pantalla Hoy de Nivela: cuánto puedes gastar hoy (datos ficticios)", en: "Nivela Today screen: how much you can spend today (fictional data)", pt: "Tela Hoje do Nivela: quanto você pode gastar hoje (dados fictícios)" } },
+      { src: "assets/proyectos/nivela-2.webp", tipo: "mob", alt: { es: "Agenda del mes con pagos, cobros e ingresos", en: "Monthly schedule with payments, collections and income", pt: "Agenda do mês com pagamentos, cobranças e receitas" } },
+      { src: "assets/proyectos/nivela-3.webp", tipo: "mob", alt: { es: "Ganancia por jornada, hora y kilómetro", en: "Earnings per shift, hour and kilometer", pt: "Ganho por jornada, hora e quilômetro" } },
+    ],
+    t: {
+      es: { tipo: "Finanzas personales con asistente en Telegram", resumen: "Te dice cuánto puedes gastar hoy según tus pagos, ahorros e ingresos. Nació como MotoCoach, para repartidores, y hoy sirve para salario, quincena o ingresos al diario.", rol: "Proyecto propio: producto, diseño, motor de cálculo, backend y bot.", funciones: ["“Hoy puedes gastar”: disponible real después de pagos y bolsillos", "Agenda de pagos, cobros e ingresos previstos", "Bolsillos de ahorro con meta y regla de aporte", "Deudas de 4 tipos (cuotas, abiertas, fecha única, personalizadas) y compartidas", "Jornadas por plataforma: ganancia por hora, km y servicio", "Bot de Telegram que registra gastos por texto o foto"], aprendizajes: "Todas las cifras salen de un motor de reglas con 87 pruebas, igual en la app y en el bot; la IA solo interpreta el texto y propone, nunca calcula saldos. Siguiente: una interfaz más sencilla para el día a día." },
+      en: { tipo: "Personal finance with a Telegram assistant", resumen: "Tells you how much you can spend today based on your bills, savings and income. It started as MotoCoach, for delivery riders, and now works for salaries, biweekly pay or daily income.", rol: "My own project: product, design, calculation engine, backend and bot.", funciones: ["“You can spend today”: real available money after bills and savings", "Schedule of payments, collections and expected income", "Savings pockets with a goal and a contribution rule", "4 debt types (installments, open-ended, single date, custom) and shared debts", "Shifts per platform: earnings per hour, km and job", "Telegram bot that logs expenses from text or a photo"], aprendizajes: "Every number comes from a rules engine with 87 tests, shared by the app and the bot; AI only reads the text and proposes, it never computes balances. Next: a simpler interface for everyday use." },
+      pt: { tipo: "Finanças pessoais com assistente no Telegram", resumen: "Diz quanto você pode gastar hoje com base nas suas contas, economias e receitas. Nasceu como MotoCoach, para entregadores, e hoje serve para salário, quinzena ou renda diária.", rol: "Projeto próprio: produto, design, motor de cálculo, backend e bot.", funciones: ["“Hoje você pode gastar”: disponível real depois de contas e reservas", "Agenda de pagamentos, cobranças e receitas previstas", "Reservas de economia com meta e regra de aporte", "Dívidas de 4 tipos (parcelas, abertas, data única, personalizadas) e compartilhadas", "Jornadas por plataforma: ganho por hora, km e serviço", "Bot do Telegram que registra gastos por texto ou foto"], aprendizajes: "Todos os números saem de um motor de regras com 87 testes, igual no app e no bot; a IA só interpreta o texto e propõe, nunca calcula saldos. Próximo: uma interface mais simples para o dia a dia." },
+    },
+    codigo: {
+      archivo: "src/core/debtMath.js",
+      lenguaje: "js",
+      texto: `export function currentMora(inst, moraRatePct, today) {
+  if (inst.remaining <= 0.5 || !inst.dueDate) return inst.paidMora || 0;
+  const late = diffDays(inst.dueDate, today);
+  if (late <= 0 || !moraRatePct) return 0;
+  return Math.round(inst.remaining * (moraRatePct / 100) * late);
+}`,
+    },
+  },
+
+  {
+    slug: "tarjetas-digitales",
+    nombre: "Tarjetas digitales",
+    destacado: false,
+    estado: "vivo",
+    anio: "2026",
+    categorias: ["web", "cliente"],
+    stack: ["HTML", "CSS", "JavaScript (módulos nativos)", "Vercel"],
+    vivo: "https://tarjetas-digitales-zeta.vercel.app/",
+    repo: { url: "https://github.com/alizz3/tarjetas-digitales", publico: false },
+    lab: null,
+    composicion: "mixta",
+    imagenes: [
+      { src: "assets/proyectos/tarjetas-1.webp", tipo: "desk", alt: { es: "Catálogo de invitaciones digitales (foto del cliente difuminada)", en: "Digital invitations catalog (client photo blurred)", pt: "Catálogo de convites digitais (foto do cliente desfocada)" } },
+      { src: "assets/proyectos/tarjetas-2.webp", tipo: "mob", alt: { es: "Invitación de cumpleaños con temática de Halloween en el celular", en: "Halloween-themed birthday invitation on a phone", pt: "Convite de aniversário com tema de Halloween no celular" } },
+    ],
+    t: {
+      es: { tipo: "Invitaciones web interactivas", resumen: "Catálogo de invitaciones para cumpleaños, bodas, XV años y otros momentos: se comparten con un link y los invitados confirman por WhatsApp.", rol: "Producto propio: diseño y desarrollo.", funciones: ["Un motor compartido y un archivo de datos por invitación", "Links ordenados por evento, temática y cliente", "Contador, galería y botón “Cómo llegar”", "Confirmación de asistencia por WhatsApp", "Catálogo público con modo claro y oscuro", "Las invitaciones no se indexan porque llevan direcciones reales"], aprendizajes: "Separar el motor de los datos hace que una invitación nueva sea copiar una carpeta y cambiar textos, fotos y colores." },
+      en: { tipo: "Interactive web invitations", resumen: "A catalog of invitations for birthdays, weddings, quinceañeras and more: shared with a link, and guests RSVP on WhatsApp.", rol: "My own product: design and development.", funciones: ["One shared engine and one data file per invitation", "Links organized by event, theme and client", "Countdown, gallery and a “Get directions” button", "RSVP through WhatsApp", "Public catalog with light and dark mode", "Invitations are not indexed because they include real addresses"], aprendizajes: "Separating the engine from the data turns a new invitation into copying a folder and changing text, photos and colors." },
+      pt: { tipo: "Convites web interativos", resumen: "Catálogo de convites para aniversários, casamentos, 15 anos e outros momentos: são compartilhados por link e os convidados confirmam pelo WhatsApp.", rol: "Produto próprio: design e desenvolvimento.", funciones: ["Um motor compartilhado e um arquivo de dados por convite", "Links organizados por evento, tema e cliente", "Contagem regressiva, galeria e botão “Como chegar”", "Confirmação de presença pelo WhatsApp", "Catálogo público com modo claro e escuro", "Os convites não são indexados porque têm endereços reais"], aprendizajes: "Separar o motor dos dados faz com que um convite novo seja copiar uma pasta e trocar textos, fotos e cores." },
+    },
+  },
+
+  {
+    slug: "bio-link",
+    nombre: "Bio link",
+    destacado: false,
+    estado: "vivo",
+    anio: "2026",
+    categorias: ["web"],
+    stack: ["HTML", "CSS", "JavaScript", "Vercel"],
+    vivo: "https://alizz.vercel.app/",
+    repo: { url: "https://github.com/alizz3/Alizz", publico: false },
+    lab: null,
+    composicion: "telefonos",
+    imagenes: [
+      { src: "assets/proyectos/biolink-1.webp", tipo: "mob", alt: { es: "Versión de redes del bio link en modo claro", en: "Social version of the bio link in light mode", pt: "Versão de redes do bio link no modo claro" } },
+      { src: "assets/proyectos/biolink-2.webp", tipo: "mob", alt: { es: "Versión profesional del bio link en modo oscuro", en: "Professional version of the bio link in dark mode", pt: "Versão profissional do bio link no modo escuro" } },
+    ],
+    t: {
+      es: { tipo: "Página de enlaces", resumen: "Mi página de enlaces para la bio de mis redes, con una versión profesional y otra personal, con mi marca.", rol: "Proyecto propio: diseño y desarrollo.", funciones: ["Versión profesional y versión de redes, enlazadas entre sí", "Tarjeta de soporte que reconoce al cliente desde el link (?cliente=)", "Correo de soporte con el asunto y el proyecto ya escritos", "Modo claro y oscuro con botón de sol y luna", "Sin teléfono a la vista, por seguridad"], aprendizajes: "Una página pequeña también merece su checklist: imagen para compartir, 404, encabezados de seguridad y analítica sin cookies." },
+      en: { tipo: "Link-in-bio page", resumen: "My link-in-bio page for my social profiles, with a professional and a personal version, in my brand.", rol: "My own project: design and development.", funciones: ["Professional and social versions, linked to each other", "Support card that recognizes the client from the link (?cliente=)", "Support email with the subject and project pre-filled", "Light and dark mode with a sun and moon toggle", "No phone number on display, for safety"], aprendizajes: "A small page still deserves its checklist: share image, 404, security headers and cookieless analytics." },
+      pt: { tipo: "Página de links", resumen: "Minha página de links para a bio das redes, com uma versão profissional e outra pessoal, com a minha marca.", rol: "Projeto próprio: design e desenvolvimento.", funciones: ["Versão profissional e versão de redes, ligadas entre si", "Cartão de suporte que reconhece o cliente pelo link (?cliente=)", "E-mail de suporte com assunto e projeto já escritos", "Modo claro e escuro com botão de sol e lua", "Sem telefone à mostra, por segurança"], aprendizajes: "Uma página pequena também merece sua checklist: imagem para compartilhar, 404, cabeçalhos de segurança e análise sem cookies." },
+    },
+  },
+
   {
     slug: "odoo-andrec",
     nombre: "Módulos para Odoo 16",
@@ -532,25 +775,6 @@ const pizzaFlavorOut = name =>
       es: { tipo: "Sitio corporativo", resumen: "Rediseño del sitio de ColaxisPro, distribuidor B2B de desinfección y salas blancas en Colombia y Ecuador. Primer cliente freelance.", rol: "Freelance: propuesta, diseño UX/UI y desarrollo.", funciones: ["Catálogo de productos y ficha de detalle", "Contacto segmentado por país", "Navbar con comportamiento al hacer scroll", "Panel de productos en construcción"], aprendizajes: "Se construye primero en HTML, CSS y JS por componentes para migrarlo después a WordPress." },
       en: { tipo: "Corporate website", resumen: "Redesign of the ColaxisPro site, a B2B disinfection and cleanroom distributor in Colombia and Ecuador. My first freelance client.", rol: "Freelance: proposal, UX/UI design and development.", funciones: ["Product catalog and detail pages", "Contact split by country", "Navbar that adapts on scroll", "Product dashboard in progress"], aprendizajes: "Built first in component-based HTML, CSS and JS, to be migrated to WordPress later." },
       pt: { tipo: "Site corporativo", resumen: "Redesenho do site da ColaxisPro, distribuidora B2B de desinfecção e salas limpas na Colômbia e no Equador. Primeira cliente freelance.", rol: "Freelance: proposta, design UX/UI e desenvolvimento.", funciones: ["Catálogo de produtos e página de detalhe", "Contato segmentado por país", "Navbar que se adapta ao rolar", "Painel de produtos em construção"], aprendizajes: "Construído primeiro em HTML, CSS e JS por componentes para depois migrar ao WordPress." },
-    },
-  },
-
-  {
-    slug: "motocoach",
-    nombre: "MotoCoach",
-    destacado: false,
-    estado: "desarrollo",
-    anio: "2026",
-    categorias: ["web", "prototipo"],
-    stack: ["React", "Vite", "Firebase Auth", "Firestore", "lucide-react"],
-    vivo: null,
-    repo: { url: "https://github.com/alizz3/motocoach-web", publico: false },
-    lab: null,
-    imagenes: [{ src: "assets/proyectos/motocoach-1.webp", tipo: "mob", alt: { es: "Pantalla de inicio de sesión de MotoCoach", en: "MotoCoach sign-in screen", pt: "Tela de login do MotoCoach" } }],
-    t: {
-      es: { tipo: "Coach financiero móvil", resumen: "App de finanzas para repartidores en moto: ingresos y gastos del día, billeteras, deudas, gastos fijos y pagos.", rol: "Proyecto propio: diseño y desarrollo.", funciones: ["Cuenta con @usuario único", "Movimientos por categoría y billetera", "Deudas con vista para compartir", "Gastos fijos y calendario de pagos", "Notificaciones dentro de la app"], aprendizajes: "Pensada para usarse con una mano y en la calle: hojas inferiores (bottom sheets) en vez de páginas." },
-      en: { tipo: "Mobile money coach", resumen: "A finance app for motorcycle delivery riders: daily income and expenses, wallets, debts, fixed costs and payments.", rol: "My own project: design and development.", funciones: ["Account with a unique @username", "Transactions by category and wallet", "Debts with a shareable view", "Fixed expenses and a payment calendar", "In-app notifications"], aprendizajes: "Made to be used one-handed on the street: bottom sheets instead of pages." },
-      pt: { tipo: "Coach financeiro móvel", resumen: "App de finanças para entregadores de moto: receitas e gastos do dia, carteiras, dívidas, gastos fixos e pagamentos.", rol: "Projeto próprio: design e desenvolvimento.", funciones: ["Conta com @usuário único", "Movimentações por categoria e carteira", "Dívidas com visualização para compartilhar", "Gastos fixos e calendário de pagamentos", "Notificações dentro do app"], aprendizajes: "Pensado para usar com uma mão e na rua: bottom sheets em vez de páginas." },
     },
   },
 
@@ -676,25 +900,30 @@ const pizzaFlavorOut = name =>
 /* ---------- Habilidades: solo lo verificado en los repositorios ---------- */
 window.HABILIDADES = [
   { grupo: { es: "Lenguajes", en: "Languages", pt: "Linguagens" }, items: [
-    { n: "JavaScript", p: ["el-taller-de-vane", "exe-presentaciones", "emily-pizza", "cuidapp", "maletica", "mumu"] },
+    { n: "JavaScript", p: ["el-taller-de-vane", "exe-presentaciones", "emily-pizza", "cuidapp", "maletica", "mumu", "pique", "nivela", "vamos-donde-nata", "tarjetas-digitales"] },
+    { n: "TypeScript", p: ["torqueos"] },
     { n: "Python", p: ["odoo-andrec"] },
     { n: "PHP", p: ["tearspa", "lasercenter"] },
     { n: "SQL · MySQL", p: ["tearspa", "lasercenter"] },
-    { n: "Java", p: ["taller-mascota"] },
-    { n: "HTML y CSS", p: ["emily-pizza", "colaxis", "exe-presentaciones"] },
+    { n: "Java", p: ["taller-mascota", "mumu"] },
+    { n: "HTML y CSS", p: ["emily-pizza", "colaxis", "exe-presentaciones", "tarjetas-digitales", "bio-link"] },
   ]},
   { grupo: { es: "Frontend", en: "Frontend", pt: "Frontend" }, items: [
-    { n: "React", p: ["el-taller-de-vane", "cuidapp", "motocoach", "cipa-exe-web"] },
-    { n: "Vue 3", p: ["maletica", "mumu"] },
-    { n: "Vite", p: ["el-taller-de-vane", "cuidapp", "maletica", "motocoach", "mumu"] },
-    { n: "Tailwind CSS", p: ["cuidapp"] },
-    { n: "PWA · Service Worker", p: ["emily-pizza", "exe-presentaciones", "mumu"] },
+    { n: "React", p: ["el-taller-de-vane", "cuidapp", "nivela", "cipa-exe-web"] },
+    { n: "Vue 3", p: ["mumu", "torqueos", "pique", "maletica"] },
+    { n: "Vite", p: ["mumu", "torqueos", "pique", "nivela", "vamos-donde-nata", "el-taller-de-vane", "cuidapp", "maletica"] },
+    { n: "Tailwind CSS", p: ["torqueos", "cuidapp"] },
+    { n: "PWA · Service Worker", p: ["mumu", "torqueos", "pique", "vamos-donde-nata", "emily-pizza", "exe-presentaciones"] },
   ]},
   { grupo: { es: "Backend y datos", en: "Backend and data", pt: "Backend e dados" }, items: [
-    { n: "Firebase Auth", p: ["el-taller-de-vane", "cuidapp", "maletica", "emily-pizza", "exe-presentaciones", "mumu"] },
-    { n: "Firestore + reglas", p: ["el-taller-de-vane", "emily-pizza", "cuidapp", "maletica", "mumu"] },
+    { n: "Firebase Auth", p: ["el-taller-de-vane", "cuidapp", "maletica", "emily-pizza", "exe-presentaciones", "mumu", "pique", "nivela"] },
+    { n: "Firestore + reglas", p: ["el-taller-de-vane", "emily-pizza", "cuidapp", "maletica", "mumu", "pique", "nivela"] },
+    { n: "Supabase · PostgreSQL", p: ["torqueos"] },
     { n: "Google OAuth · Gmail, Calendar, Classroom", p: ["mumu"] },
-    { n: "Funciones serverless (Vercel)", p: ["mumu"] },
+    { n: "Funciones serverless (Vercel)", p: ["mumu", "pique", "nivela", "torqueos"] },
+    { n: "Bots de Telegram", p: ["nivela", "pique"] },
+    { n: "IA con Groq y Gemini", p: ["mumu", "nivela"] },
+    { n: "Mapas · OpenStreetMap", p: ["pique"] },
     { n: "Moodle Web Services", p: ["mumu"] },
     { n: "Realtime Database", p: ["exe-presentaciones"] },
     { n: "Firebase Storage", p: ["el-taller-de-vane", "cuidapp"] },
@@ -703,16 +932,16 @@ window.HABILIDADES = [
   ]},
   { grupo: { es: "Herramientas", en: "Tools", pt: "Ferramentas" }, items: [
     { n: "Git y GitHub", p: [] },
-    { n: "Vercel", p: ["emily-pizza", "maletica", "cuidapp", "exe-presentaciones", "mumu"] },
+    { n: "Vercel", p: ["mumu", "torqueos", "pique", "nivela", "vamos-donde-nata", "tarjetas-digitales", "bio-link", "emily-pizza", "maletica", "cuidapp", "exe-presentaciones"] },
     { n: "Firebase Hosting", p: ["el-taller-de-vane"] },
     { n: "VS Code", p: [] },
     { n: "Figma", p: [] },
   ]},
   { grupo: { es: "Diseño y producto", en: "Design and product", pt: "Design e produto" }, items: [
-    { n: { es: "Identidad de marca", en: "Brand identity", pt: "Identidade visual" }, p: ["el-taller-de-vane", "exe-presentaciones"] },
-    { n: { es: "Diseño de interfaces", en: "UI design", pt: "Design de interfaces" }, p: ["el-taller-de-vane", "emily-pizza", "maletica", "mumu"] },
-    { n: { es: "Modo claro y oscuro", en: "Light and dark mode", pt: "Modo claro e escuro" }, p: ["maletica", "emily-pizza", "exe-presentaciones", "mumu"] },
-    { n: { es: "SEO y accesibilidad", en: "SEO and accessibility", pt: "SEO e acessibilidade" }, p: ["emily-pizza", "mumu"] },
+    { n: { es: "Identidad de marca", en: "Brand identity", pt: "Identidade visual" }, p: ["el-taller-de-vane", "exe-presentaciones", "pique", "bio-link"] },
+    { n: { es: "Diseño de interfaces", en: "UI design", pt: "Design de interfaces" }, p: ["el-taller-de-vane", "emily-pizza", "maletica", "mumu", "torqueos", "tarjetas-digitales"] },
+    { n: { es: "Modo claro y oscuro", en: "Light and dark mode", pt: "Modo claro e escuro" }, p: ["maletica", "emily-pizza", "exe-presentaciones", "mumu", "torqueos", "bio-link"] },
+    { n: { es: "SEO y accesibilidad", en: "SEO and accessibility", pt: "SEO e acessibilidade" }, p: ["emily-pizza", "mumu", "vamos-donde-nata"] },
     { n: { es: "Ilustración SVG", en: "SVG illustration", pt: "Ilustração SVG" }, p: ["mumu"] },
   ]},
 ];
