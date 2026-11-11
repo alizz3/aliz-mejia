@@ -47,6 +47,7 @@ npx serve .
 1. Toma capturas: escritorio 1440 × 900 y celular 390 × 844, en WebP.
 2. Ponlas en `assets/proyectos/<nombre>-1.webp`, `-2.webp`…
 3. Copia un objeto de `PROYECTOS` en `js/datos.js` y cambia sus datos. Con `destacado: true` aparece arriba.
+4. Usa datos de demostración en las capturas: nada de nombres, fotos ni datos reales de clientes o personas.
 
 ### Tus fotos
 
